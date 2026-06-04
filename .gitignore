@@ -1,0 +1,13 @@
+node_modules/
+
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Editores y Entornos
+.vscode/
+.idea/
+
+# Sass Cache
+.sass-cache/
+*.css.map
