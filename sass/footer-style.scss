@@ -1,10 +1,27 @@
+@font-face {
+  font-family: 'inter-medium';
+  src: url(/assets/fonts/Inter/Inter_18pt-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'inter-regular';
+  src: url(/assets/fonts/Inter/Inter_28pt-Regular.ttf);
+}
+
+* {
+  font-family: 'inter-regular';
+}
+
 p,
-a {
+a,
+span {
   font-size: 12px !important;
 }
 
 h2 {
   font-size: 16px;
+  font-family: 'inter-medium';
+  color: #ea9981;
 }
 
 a {
