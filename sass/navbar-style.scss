@@ -12,6 +12,20 @@
   font-family: 'serif-elegant';
   src: url(/assets/fonts/Playfair/PlayfairDisplay-Regular.ttf);
 }
+.navbar-glass {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+
+  background-color: rgba(0, 0, 0, 0.4) !important;
+
+  /* Application du flou */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
 
 .logo-box {
   background-color: #e0e0e0;
@@ -36,6 +50,13 @@
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
+//  BOUTON CTA INVERSÉ
+.btn-cta-inverse {
+  font-family: 'serif-elegant', serif;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
 
 //
 // CONTRÔLE DES VARIANTES DE COULEUR (Thèmes de page)
@@ -45,7 +66,13 @@
 .nav-theme-dark {
   .nav-links a {
     color: #1a1a1a;
+
+    /* Changement en blanc au survol */
+    &:hover {
+      color: #ffffff;
+    }
   }
+
   .btn-cta {
     color: #1a1a1a;
     border: 1px solid #1a1a1a;
@@ -55,6 +82,19 @@
       color: #ffffff;
     }
   }
+
+  /* Nouveau bouton CTA inversé (Fond sombre -> Fond transparent) */
+  .btn-cta-inverse {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #1a1a1a;
+
+    &:hover {
+      background-color: transparent;
+      color: #1a1a1a;
+    }
+  }
+
   .menu-burger-btn {
     color: #1a1a1a;
   }
@@ -64,17 +104,10 @@
 .nav-theme-light {
   .nav-links a {
     color: #ffffff;
-  }
-  .btn-cta {
-    color: #ffffff;
-    border: 1px solid #ffffff;
 
+    /* Changement en noir au survol */
     &:hover {
-      background-color: #ffffff;
       color: #1a1a1a;
     }
-  }
-  .menu-burger-btn {
-    color: #ffffff;
   }
 }
