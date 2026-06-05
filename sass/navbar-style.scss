@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'inter-medium';
+  src: url(/assets/fonts/Inter/Inter_18pt-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'inter-regular';
+  src: url(/assets/fonts/Inter/Inter_28pt-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'serif-elegant';
+  src: url(/assets/fonts/Playfair/PlayfairDisplay-Regular.ttf);
+}
+
+.logo-box {
+  background-color: #e0e0e0;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a {
+  font-family: 'serif-elegant', Georgia, serif;
+  font-size: 18px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.btn-cta {
+  font-family: 'serif-elegant', Georgia, serif;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+//
+// CONTRÔLE DES VARIANTES DE COULEUR (Thèmes de page)
+//
+
+// Variante Sombre
+.nav-theme-dark {
+  .nav-links a {
+    color: #1a1a1a;
+  }
+  .btn-cta {
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+
+    &:hover {
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+  }
+}
+
+// Variante Claire
+.nav-theme-light {
+  .nav-links a {
+    color: #ffffff;
+  }
+  .btn-cta {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #1a1a1a;
+    }
+  }
+}
