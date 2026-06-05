@@ -103,14 +103,15 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .illustration-contact {
     min-height: 407px;
+    background-color: #000000;
 
     background-image: url('../assets/img/contact__image.png');
     background-repeat: no-repeat;
-    background-position: left -30px top;
-    background-size: 570px 190px;
+    background-position: center top;
+    background-size: cover;
 
     &__image {
       display: none;
@@ -142,8 +143,9 @@
     .illustration-contact {
       &__button {
         width: 195px;
+        height: 44.9px;
         min-height: 44.9px;
-        padding: 14px;
+        padding: 0 14px;
 
         font-size: 15px;
         line-height: 1;
