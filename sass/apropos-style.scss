@@ -131,3 +131,75 @@
     border-radius: 2px;
   }
 }
+// ==========================================================================
+// BLOCK : PRINCIPES (SECTION BLANCHE)
+// ==========================================================================
+
+.about-principles {
+  background-color: #ffffff;
+  color: #000000;
+
+  // ELEMENT : Titre de section
+  &__title {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-size: 48px; // Desktop exact
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+
+    span {
+      font-family: 'playfair-regular', Georgia, serif;
+      font-style: italic; // Pour correspondre à "aucune concession" sur la maquette
+    }
+
+    @media (max-width: 768px) {
+      font-size: 36px; // Mobile exact
+    }
+  }
+
+  // ELEMENT : Boîte avec bordure
+  &__box {
+    border-color: #1a1a1a !important;
+  }
+
+  // ELEMENT : Colonnes (Gestion des séparateurs sur mobile)
+  &__item {
+    @media (max-width: 767px) {
+      // Ajoute une ligne de séparation en bas de chaque item sur mobile SAUF le dernier
+      &:not(:last-child) {
+        border-bottom: 1px solid #1a1a1a;
+        padding-bottom: 2rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  // ELEMENT : Numéros (01, 02, 03)
+  &__number {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-size: 48px; // Desktop exact
+    color: #6c757d; // Gris pour donner l'effet légèrement estompé de la maquette
+
+    @media (max-width: 768px) {
+      font-size: 40px; // Mobile exact
+    }
+  }
+
+  // ELEMENT : Sous-titres (Écoute, Discrétion, Exigence)
+  &__subtitle {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-size: 48px; // Desktop exact
+    line-height: 1.1;
+
+    @media (max-width: 768px) {
+      font-size: 40px; // Mobile exact
+    }
+  }
+
+  // ELEMENT : Textes paragraphes
+  &__text {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-size: 16px; // Fixe en desktop et mobile selon ta demande
+    line-height: 1.6;
+    color: #1a1a1a;
+  }
+}
