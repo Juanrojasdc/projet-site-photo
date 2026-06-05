@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'inter-medium';
+  src: url(/assets/fonts/Inter/Inter_18pt-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'inter-regular';
+  src: url(/assets/fonts/Inter/Inter_28pt-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'playfair-regular';
+  src: url(/assets/fonts/Playfair/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: 'montserrat-medium';
+  src: url(/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: 'montserrat-regular';
+  src: url(/assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+// ==========================================================================
+// BLOCK : HERO ABOUT
+// ==========================================================================
+.hero-about {
+  background-image: url('/assets/img/362487497_1692271614531659_1542923346687557919_n.webp');
+  background-size: cover;
+  background-position: right 99% center;
+  background-repeat: no-repeat;
+  font-family: 'playfair-regular', serif;
+
+  min-height: 55vh;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  @media (max-width: 768px) {
+    min-height: 80vh;
+    background-position: center;
+  }
+
+  &__overlay {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
+
+    @media (max-width: 768px) {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
+    }
+  }
+
+  &__title {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+
+    span {
+      font-family: 'playfair-regular', Georgia, serif;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    font-family: 'montserrat-medium', sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+    max-width: 90%;
+    opacity: 0.9;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+
+// ==========================================================================
+// BLOCK : ABOUT INTRO
+// ==========================================================================
+.about-intro {
+  background-color: #000000;
+
+  &__title {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: normal;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  &__highlight {
+    @media (min-width: 768px) {
+      font-family: 'Brush Script MT', 'Lucida Handwriting', 'Segoe Script', cursive;
+      color: #c87b57;
+      font-size: 1.25em;
+      font-weight: normal;
+      display: inline-block;
+      transform: translateY(2px);
+    }
+
+    @media (max-width: 767px) {
+      font-family: inherit;
+      color: inherit;
+      font-size: inherit;
+      text-transform: lowercase;
+    }
+  }
+
+  &__content {
+    p {
+      font-family: 'montserrat-regular', sans-serif;
+      font-size: 24px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 1.5rem;
+
+      @media (max-width: 768px) {
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    border-radius: 2px;
+  }
+}

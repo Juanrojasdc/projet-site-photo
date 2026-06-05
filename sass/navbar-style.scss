@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: 'serif-elegant';
+  font-family: 'playfair-regular';
   src: url(/assets/fonts/Playfair/PlayfairDisplay-Regular.ttf);
 }
 .navbar-glass {
@@ -34,7 +34,7 @@
 }
 
 .nav-links a {
-  font-family: 'serif-elegant', serif;
+  font-family: 'playfair-regular', serif;
   font-size: 24px;
   text-decoration: none;
   transition: opacity 0.2s ease;
@@ -45,14 +45,14 @@
 }
 
 .btn-cta {
-  font-family: 'serif-elegant', serif;
+  font-family: 'playfair-regular', serif;
   font-size: 20px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 //  BOUTON CTA INVERSÉ
 .btn-cta-inverse {
-  font-family: 'serif-elegant', serif;
+  font-family: 'playfair-regular', serif;
   font-size: 20px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
