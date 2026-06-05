@@ -15,13 +15,13 @@
 
 .logo-box {
   background-color: #e0e0e0;
-  font-size: 16px;
+  font-size: 24px;
   letter-spacing: 0.5px;
 }
 
 .nav-links a {
-  font-family: 'serif-elegant', Georgia, serif;
-  font-size: 18px;
+  font-family: 'serif-elegant', serif;
+  font-size: 24px;
   text-decoration: none;
   transition: opacity 0.2s ease;
 
@@ -31,8 +31,8 @@
 }
 
 .btn-cta {
-  font-family: 'serif-elegant', Georgia, serif;
-  font-size: 14px;
+  font-family: 'serif-elegant', serif;
+  font-size: 20px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
@@ -55,6 +55,9 @@
       color: #ffffff;
     }
   }
+  .menu-burger-btn {
+    color: #1a1a1a;
+  }
 }
 
 // Variante Claire
@@ -70,5 +73,8 @@
       background-color: #ffffff;
       color: #1a1a1a;
     }
+  }
+  .menu-burger-btn {
+    color: #ffffff;
   }
 }
