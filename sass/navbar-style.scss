@@ -12,6 +12,10 @@
   font-family: 'playfair-regular';
   src: url(/assets/fonts/Playfair/PlayfairDisplay-Regular.ttf);
 }
+* {
+  letter-spacing: 2px;
+}
+
 .navbar-glass {
   position: fixed;
   top: 0;
