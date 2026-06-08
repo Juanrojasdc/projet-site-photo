@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'playfair-display';
+  src: url(/assets/fonts/Playfair-Display/PlayfairDisplay-Regular.woff);
+}
+
+@font-face {
+  font-family: 'playfair-display-bold';
+  src: url(/assets/fonts/Playfair-Display/PlayfairDisplay-Bold.woff);
+}
+
+@font-face {
+  font-family: 'playfair-display-italic';
+  src: url(/assets/fonts/Playfair-Display/PlayfairDisplay-Italic.woff);
+}
+
+.table {
+  &--bold {
+    font-family: 'playfair-display-bold';
+  }
+}
+
+.table-row {
+  font-family: 'playfair-display';
+}
+
+h2,
+h3 {
+  font-family: 'playfair-display';
+}
+
+.h3-italic {
+  font-family: 'playfair-display-italic';
+}
+
+.form-date {
+  border-radius: 20px 0px 0px 20px !important;
+}
+
+.btn {
+  background-color: #ea9981;
+  font-family: 'playfair-display';
+  border: none;
+  &:hover {
+    box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    background-color: #ea9981;
+    border: none;
+  }
+}
