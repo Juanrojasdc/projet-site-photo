@@ -1,0 +1,151 @@
+$color-primary: #ea9981;
+$color-text-dark: #333333;
+
+@font-face {
+  font-family: 'inter-medium';
+  src: url(/assets/fonts/Inter/Inter_18pt-Medium.ttf);
+}
+@font-face {
+  font-family: 'inter-regular';
+  src: url(/assets/fonts/Inter/Inter_28pt-Regular.ttf);
+}
+@font-face {
+  font-family: 'playfair-regular';
+  src: url(/assets/fonts/Playfair/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: 'playfair-light';
+  src: url(/assets/fonts/Playfair/PlayfairDisplay-light.ttf);
+}
+@font-face {
+  font-family: 'montserrat-medium';
+  src: url(/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: 'montserrat-regular';
+  src: url(/assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+// --- HERO FAQ SECTION ---
+.hero-faq {
+  background-image: url('/assets/img/mariage/mariage-7.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  min-height: 50vh;
+
+  @media (max-width: 768px) {
+    min-height: 45vh;
+  }
+
+  .hero-title {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    letter-spacing: 4px;
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  .hero-text-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 5px;
+  }
+}
+
+// --- SECTION FAQ ---
+
+.faq-title {
+  font-family: 'playfair-regular', serif;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+// --- SECTION FAQ TIMELINE ---
+.faq-steps-section {
+  padding: 80px 0;
+
+  .step-card {
+    position: relative;
+    padding-bottom: 40px;
+    padding-left: 50px;
+
+    .step-number {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      background-color: $color-primary;
+      color: #000000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'playfair-regular', serif;
+      font-weight: bold;
+      z-index: 2;
+    }
+
+    .step-line {
+      position: absolute;
+      background-color: $color-primary;
+      z-index: 1;
+
+      //   ligne vertical pour mobile
+      left: 15px;
+      top: 40px;
+      width: 2px;
+      height: calc(100% - 40px);
+    }
+
+    // ESCRITORIO
+    @media (min-width: 992px) {
+      padding-left: 0;
+      padding-top: 60px;
+
+      .step-number {
+        top: 0;
+        left: 0;
+      }
+
+      .step-line {
+        top: 15px;
+        left: 45px;
+        width: calc(100% - 60px);
+        height: 2px;
+      }
+    }
+
+    .step-title {
+      font-family: 'playfair-regular', serif;
+      font-size: 22px;
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    .step-subtitle {
+      display: block;
+      font-family: 'playfair-light', serif;
+      font-style: italic;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .step-text {
+      font-family: 'montserrat-regular', sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+  }
+}
