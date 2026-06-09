@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/assets/css/galerie-style.min.css" />
+  </head>
+  <body>
+    <section>
+      <div class="row d-flex flex-column">
+        <div class="col"><h3>Galerie photo</h3></div>
+        <div class="col d-flex">
+          <i class="bi bi-sliders"></i>
+          <p>filtrer par type</p>
+        </div>
+      </div>
+      <!-- Conteneur principal du layout Bento -->
+      <div class="bento-container">
+        <!-- row g-3 : ligne Bootstrap avec gutter (espacement) de 3 entre les colonnes -->
+        <div class="row g-3">
+          <!-- ========== PREMIÈRE LIGNE ========== -->
+          <!-- Grande carte occupant 8 colonnes sur 12 (66% de largeur sur desktop) -->
+          <div class="col-md-8">
+            <div class="bento-item bento-large">
+              <img
+                src="/assets/img/362478712_686731866599729_164257984513994142_n.webp"
+                alt="Image grande 1"
+              />
+            </div>
+          </div>
+          <!-- Colonne de 4 unités (33% de largeur) contenant 2 petites cartes empilées -->
+          <div class="col-md-4">
+            <!-- Sous-grille pour empiler verticalement les petites cartes -->
+            <div class="row g-3">
+              <!-- Première petite carte (col-12 = 100% de la largeur disponible) -->
+              <div class="col-12">
+                <div class="bento-item bento-small">
+                  <img src="/assets/img/_DSC3181.webp" alt="Image petite 1" />
+                </div>
+              </div>
+              <!-- Deuxième petite carte -->
+              <div class="col-12">
+                <div class="bento-item bento-small">
+                  <img src="../img/bento-fonts.webp" alt="Image petite 2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========== DEUXIÈME LIGNE ========== -->
+          <!-- Trois cartes moyennes de taille égale (4+4+4 = 12 colonnes = 100%) -->
+          <div class="col-md-4">
+            <div class="bento-item bento-medium">
+              <img src="../img/bento-stickers.webp" alt="Image moyenne 1" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bento-item bento-medium">
+              <img src="../img/bento-wallpaper.webp" alt="Image moyenne 2" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bento-item bento-medium">
+              <img src="../img/bento-colors.png" alt="Image moyenne 3" />
+            </div>
+          </div>
+
+          <!-- ========== TROISIÈME LIGNE ========== -->
+          <!-- Colonne de gauche (6/12 = 50%) contenant 3 petites cartes en grille -->
+          <div class="col-md-6">
+            <!-- Sous-grille pour organiser les 3 petites cartes -->
+            <div class="row g-3">
+              <!-- Deux cartes côte à côte (col-md-6 = 50% chacune de l'espace disponible) -->
+              <div class="col-md-6">
+                <div class="bento-item bento-small">
+                  <img src="../img/bento-apps.webp" alt="Image petite 3" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bento-item bento-small">
+                  <img src="../img/bento-logo.webp" alt="Image petite 4" />
+                </div>
+              </div>
+              <!-- Carte pleine largeur en dessous (col-12 = 100%) -->
+              <div class="col-12">
+                <div class="bento-item bento-small">
+                  <img src="../img/bento-fonts.webp" alt="Image petite 5" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Colonne de droite (6/12 = 50%) avec une grande carte -->
+          <div class="col-md-6">
+            <div class="bento-item bento-large">
+              <img src="../img/bento-display.webp" alt="Image grande 2" />
+            </div>
+          </div>
+        </div>
+        <!-- Fin de la grille principale -->
+      </div>
+      <!-- Fin du conteneur Bento -->
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
