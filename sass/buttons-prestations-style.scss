@@ -39,11 +39,6 @@
   }
 }
 
-h5 {
-  font-family: 'montserrat-medium';
-  font-size: clamp(0.75rem, 1.5vw, 1.25rem);
-}
-
 h2 {
   font-family: 'playfair-display';
   & span {
@@ -65,4 +60,6 @@ p {
 
 .presta-title {
   width: 250px;
+  font-family: 'montserrat-medium';
+  font-size: clamp(0.75rem, 1.5vw, 1.25rem);
 }

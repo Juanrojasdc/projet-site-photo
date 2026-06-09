@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'playfair-display';
+  src: url(/assets/fonts/Playfair-Display/PlayfairDisplay-Regular.woff);
+}
+
+* {
+  font-family: 'playfair-display';
+}
+
 /* Conteneur principal du Bento avec largeur maximale */
 .bento-container {
   max-width: 1200px;
@@ -8,7 +17,6 @@
 .bento-item {
   position: relative; /* Pour positionner les éléments enfants */
   overflow: hidden; /* Cache le débordement lors du zoom au survol */
-  margin-bottom: 15px; /* Espacement entre les éléments */
 }
 
 /* Style pour les images à l'intérieur des cartes */
@@ -26,7 +34,7 @@
 
 /* Définition des différentes tailles d'éléments */
 .bento-small {
-  height: 190px; /* Petite hauteur pour les petites cartes */
+  height: 195px; /* Petite hauteur pour les petites cartes */
 }
 
 .bento-medium {
@@ -35,6 +43,14 @@
 
 .bento-large {
   height: 415px; /* Grande hauteur pour les grandes cartes */
+}
+
+.bento-vertical {
+  height: 100%; // prend toute la hauteur de la colonne droite
+  min-height: calc(195px * 2 + 16px); // 2 lignes + 1 gap
+  @media (max-width: 767.98px) {
+    height: 100px; // hauteur sur mobile uniquement
+  }
 }
 
 /* Media query pour les petits écrans (smartphones) */
