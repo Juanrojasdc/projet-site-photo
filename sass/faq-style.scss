@@ -166,14 +166,14 @@ $color-text-dark: #333333;
 
   &__item {
     background-color: #ffffff;
-    border-radius: 12px; // Esquinas redondeadas perfectas de Figma
-    margin-bottom: 16px; // Espaciado limpio entre cajas
+    border-radius: 12px;
+    margin-bottom: 16px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease;
 
     &:hover {
-      transform: translateY(-2px); // Sutil efecto interactivo premium
+      transform: translateY(-2px);
     }
   }
 
@@ -210,25 +210,25 @@ $color-text-dark: #333333;
   &__icon-wrapper {
     width: 36px;
     height: 36px;
-    background-color: $color-primary; // Tu color corporativo naranja/coral
+    background-color: $color-primary;
     color: #ffffff;
-    border-radius: 50%; // Botón completamente circular
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0; // Evita que el círculo se deforme si el texto es muy largo
+    flex-shrink: 0;
     transition: background-color 0.2s ease;
   }
 
   &__icon {
     font-size: 14px;
     display: inline-block;
-    transition: transform 0.3s ease; // Transición suave para la rotación de la flecha
+    transition: transform 0.3s ease;
   }
 
   &__body {
     padding: 20px 24px;
-    background-color: #fafafa; // Un fondo sutilmente grisáceo para diferenciar el texto abierto
+    background-color: #fafafa;
   }
 
   &__text {
