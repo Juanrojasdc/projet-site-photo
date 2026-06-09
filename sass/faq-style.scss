@@ -149,3 +149,93 @@ $color-text-dark: #333333;
     }
   }
 }
+// --- SECTION FAQ QUESTIONS (BEM & DRY ARCHITECTURE) ---
+.faq-questions {
+  padding-bottom: 80px;
+
+  &__column-title {
+    font-family: 'playfair-regular', serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    background-color: #ffffff;
+    border-radius: 12px; // Esquinas redondeadas perfectas de Figma
+    margin-bottom: 16px; // Espaciado limpio entre cajas
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px); // Sutil efecto interactivo premium
+    }
+  }
+
+  &__trigger {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    cursor: pointer;
+
+    // Cuando la pregunta está abierta, aplicamos un sutil borde inferior interno para separar la respuesta
+    &[aria-expanded='true'] {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+      // Rotación del ícono de la flecha
+      .faq-questions__icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'montserrat-medium', sans-serif;
+    font-size: 16px;
+    color: $color-text-dark;
+    padding-right: 15px;
+    line-height: 1.4;
+  }
+
+  &__icon-wrapper {
+    width: 36px;
+    height: 36px;
+    background-color: $color-primary; // Tu color corporativo naranja/coral
+    color: #ffffff;
+    border-radius: 50%; // Botón completamente circular
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; // Evita que el círculo se deforme si el texto es muy largo
+    transition: background-color 0.2s ease;
+  }
+
+  &__icon {
+    font-size: 14px;
+    display: inline-block;
+    transition: transform 0.3s ease; // Transición suave para la rotación de la flecha
+  }
+
+  &__body {
+    padding: 20px 24px;
+    background-color: #fafafa; // Un fondo sutilmente grisáceo para diferenciar el texto abierto
+  }
+
+  &__text {
+    font-family: 'montserrat-regular', sans-serif;
+    font-size: 14px;
+    color: #555555;
+    margin: 0;
+    line-height: 1.6;
+  }
+}
