@@ -28,7 +28,7 @@ $color-text-dark: #333333;
 
 // --- HERO FAQ SECTION ---
 .hero-faq {
-  background-image: url('/assets/img/DSC_7051.webp');
+  background-image: url('/assets/img/mariage/mariage-7.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,17 +100,17 @@ $color-text-dark: #333333;
       background-color: $color-primary;
       z-index: 1;
 
-      // MÓVIL: Línea vertical
-      left: 15px; // Alineada con el centro del círculo de 32px
-      top: 40px; // Empieza justo debajo del número
+      //   ligne vertical pour mobile
+      left: 15px;
+      top: 40px;
       width: 2px;
-      height: calc(100% - 40px); // Llega hasta abajo, dejando un respiro para la siguiente tarjeta
+      height: calc(100% - 40px);
     }
 
     // ESCRITORIO
     @media (min-width: 992px) {
-      padding-left: 0; // Quitamos el margen izquierdo de móvil
-      padding-top: 60px; // Hacemos espacio arriba para el número y la línea horizontal
+      padding-left: 0;
+      padding-top: 60px;
 
       .step-number {
         top: 0;
@@ -118,10 +118,9 @@ $color-text-dark: #333333;
       }
 
       .step-line {
-        // ESCRITORIO: Línea horizontal
-        top: 15px; // Centrada verticalmente con el círculo
-        left: 45px; // Empieza a la derecha del número
-        width: calc(100% - 60px); // La línea es más corta, igual que en Figma
+        top: 15px;
+        left: 45px;
+        width: calc(100% - 60px);
         height: 2px;
       }
     }
