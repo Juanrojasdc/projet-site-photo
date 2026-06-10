@@ -27,68 +27,93 @@ $color-text-dark: #333333;
 * {
   letter-spacing: 2px;
 }
-
 // --- HERO SECTION ---
 .hero-prestations {
   position: relative;
-  min-height: 60vh;
-  background-image: url('/assets/img/mariage/mariage-32.webp');
-  background-size: cover;
-  background-position: 100% 35%;
-  background-repeat: no-repeat;
+  min-height: 45vh;
   padding: 60px 0;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/img/animalier/canin-9.webp');
+    background-repeat: no-repeat;
+
+    background-size: 120%;
+    background-position: 35% 60%;
+
+    // Espejo
+    transform: scaleX(-1);
+    z-index: 1;
+  }
+
+  .container,
+  .hero-text-box {
+    position: relative;
+    z-index: 2;
+  }
 
   // Ajustes para dispositivos móviles
   @media (max-width: 768px) {
     min-height: 45vh;
-    background-position: 80% 30%;
     padding: 40px 0;
-  }
 
-  // Boîte de texte
-  .hero-text-box {
-    @media (max-width: 768px) {
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 20px;
-      border-radius: 8px;
+    &::before {
+      background-image: url('/assets/img/animalier/canin-8.webp');
+      background-size: cover; //
+      background-position: 50% 40%;
+      transform: none; //
     }
   }
+}
+// // Boîte de texte
+// .hero-text-box {
+//   @media (max-width: 768px) {
+//     background-color: rgba(255, 255, 255, 0.5);
+//     padding: 20px;
+//     border-radius: 8px;
+//   }
+// }
 
-  .hero-title {
-    font-family: 'playfair-regular', Georgia, serif;
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    font-weight: 400;
-    line-height: 1.2;
-    color: $color-text-dark;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.hero-title {
+  font-family: 'playfair-regular', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: $color-text-dark;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 
-    .text-script {
-      font-family: 'Brush Script MT', 'Lucida Handwriting', 'Segoe Script', cursive;
-      color: $color-primary;
-      text-transform: none;
-      font-size: 1.3em;
-      letter-spacing: 0;
-    }
-
-    .title-indent {
-      display: inline-block;
-      margin-left: 20px;
-      white-space: nowrap;
-
-      @media (min-width: 768px) {
-        margin-left: 60px;
-      }
-    }
+  .text-script {
+    font-family: 'Brush Script MT', 'Lucida Handwriting', 'Segoe Script', cursive;
+    color: $color-primary;
+    text-transform: none;
+    font-size: 1.3em;
+    letter-spacing: 0;
   }
 
-  .hero-subtitle {
-    font-family: 'montserrat-regular', Arial, sans-serif;
-    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-    line-height: 1.6;
-    color: $color-text-dark;
-    max-width: 450px;
+  .title-indent {
+    display: inline-block;
+    margin-left: 20px;
+    white-space: nowrap;
+
+    @media (min-width: 768px) {
+      margin-left: 60px;
+    }
   }
+}
+
+.hero-subtitle {
+  font-family: 'montserrat-regular', Arial, sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  line-height: 1.6;
+  color: $color-text-dark;
+  max-width: 450px;
 }
 
 // --- SECTION INTRO (BANDEAU NOIR) ---
