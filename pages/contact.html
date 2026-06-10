@@ -65,45 +65,134 @@
         <div class="col-12 col-md-6">
           <p class="text-light text-center">Derrière chaque photo, une rencontre.</p>
         </div>
-        <div class="col text-light">
-          <p class="text-light">
-            Mariage, portrait, famille ou événement professionnel.<br /><span class="text-orange"
-              >Racontez-moi</span
-            >
-            votre projet.
+        <!-- Étape 1 -->
+        <div class="form-step col-12 col-md-6 text-light" id="step-1">
+          <p>
+            Mariage, portrait, famille ou événement professionnel.<br />
+            <span class="text-orange">Racontez-moi</span> votre projet.
           </p>
-          <p class="text-extralight">1 sur 3</p>
+          <p class="text-extralight step-indicator">1 sur 3</p>
           <form class="row g-3 py-4">
             <div class="col table-font">
               <label class="visually-hidden" for="autoSizingSelect">Preference</label>
               <select class="form-select table-font" id="autoSizingSelect">
                 <option selected>Type de prestation</option>
-                <option class="table-font" value="1">Mariage</option>
-                <option class="table-font" value="2">Maternité</option>
-                <option class="table-font" value="3">Portraits</option>
-                <option class="table-font" value="4">Animalier</option>
-                <option class="table-font" value="5">Corporate</option>
+                <option value="1">Mariage</option>
+                <option value="2">Maternité</option>
+                <option value="3">Portraits</option>
+                <option value="4">Animalier</option>
+                <option value="5">Corporate</option>
               </select>
             </div>
             <div class="col-12 py-2">
               <div class="row g-0">
                 <div class="col-6 table-font">
-                  <label class="form-label table-font">Date de début</label>
+                  <label class="form-label">Date de début</label>
                   <input type="date" class="form-control rounded-start rounded-end-0" />
                 </div>
                 <div class="col-6 table-font">
-                  <label class="form-label table-font">Date de fin</label>
+                  <label class="form-label">Date de fin</label>
                   <input type="date" class="form-control rounded-start-0 rounded-end" />
                 </div>
                 <div class="col py-2">
-                  <label class="form-label table-font">Budget</label>
-                  <input type="number" class="form-control" placeholder="" />
+                  <label class="form-label">Budget</label>
+                  <input type="number" class="form-control" placeholder="Budget en €" />
                 </div>
               </div>
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary rounded-0 w-100 text-black">
+              <button type="button" class="btn-next btn btn-primary rounded-0 w-100 text-black">
                 C'est bientôt fini
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Étape 2 -->
+        <div class="form-step d-none col-12 col-md-6 text-light" id="step-2">
+          <p>
+            Mariage, portrait, famille ou événement professionnel.<br />
+            <span class="text-orange">Racontez-moi</span> votre projet.
+          </p>
+          <p class="text-extralight step-indicator">2 sur 3</p>
+          <form class="row py-4">
+            <div class="col-12 py-2">
+              <div class="row g-0">
+                <div class="col-6 table-font">
+                  <label class="form-label">Nom</label>
+                  <input
+                    type="text"
+                    class="form-control rounded-start rounded-end-0"
+                    placeholder="Dupont"
+                  />
+                </div>
+                <div class="col-6 table-font">
+                  <label class="form-label">Prénom</label>
+                  <input
+                    type="text"
+                    class="form-control rounded-start-0 rounded-end"
+                    placeholder="Jean"
+                  />
+                </div>
+              </div>
+              <div class="row g-0">
+                <div class="col-6 table-font pt-2">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control rounded-start rounded-end-0"
+                    placeholder="jean.dupont@email.com"
+                  />
+                </div>
+                <div class="col-6 table-font pt-2">
+                  <label class="form-label">Téléphone</label>
+                  <input
+                    type="tel"
+                    class="form-control rounded-start-0 rounded-end"
+                    placeholder="06 00 00 00 00"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 pt-4">
+              <button type="button" class="btn-next btn btn-primary rounded-0 w-100 text-black">
+                Encore un effort
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Étape 3 -->
+        <div class="form-step d-none col-12 col-md-6 text-light" id="step-3">
+          <p>
+            Mariage, portrait, famille ou événement professionnel.<br />
+            <span class="text-orange">Racontez-moi</span> votre projet.
+          </p>
+          <p class="text-extralight step-indicator">3 sur 3</p>
+          <form class="row g-3 py-4">
+            <div class="col table-font">
+              <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+              <select class="form-select table-font" id="autoSizingSelect">
+                <option selected>Comment avez-vous connu LAPhotographie33 ?</option>
+                <option value="1">Bouche à oreille</option>
+                <option value="2">Google</option>
+                <option value="3">Réseaux sociaux</option>
+                <option value="4">Autre</option>
+              </select>
+            </div>
+            <div class="col-12 py-2">
+              <div class="row g-0">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Décrivez votre projet..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-next rounded-0 w-100 text-black">
+                Planifions votre séance
               </button>
             </div>
           </form>
@@ -144,5 +233,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/js/contact-script.js"></script>
   </body>
 </html>
