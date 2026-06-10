@@ -45,18 +45,13 @@ $color-text-dark: #333333;
     background-repeat: no-repeat;
 
     background-size: 120%;
-
-    // 2. EL CENTRADO (X, Y): Ajusta aquí la posición
-    // Ojo: Como la imagen está invertida, los valores de izquierda/derecha cambian su comportamiento.
     background-position: 35% 60%;
 
-    // 3. EL ESPEJO: Invierte la imagen horizontalmente
+    // Espejo
     transform: scaleX(-1);
-
-    z-index: 1; // Se queda al fondo
+    z-index: 1;
   }
 
-  // Aseguramos que el contenedor y el texto se queden por encima de la imagen
   .container,
   .hero-text-box {
     position: relative;
