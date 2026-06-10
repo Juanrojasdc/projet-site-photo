@@ -1,117 +1,79 @@
-@font-face {
-  font-family: 'inter-medium';
-  src: url(/assets/fonts/Inter/Inter_18pt-Medium.ttf);
-}
+@import 'variables';
 
-@font-face {
-  font-family: 'inter-regular';
-  src: url(/assets/fonts/Inter/Inter_28pt-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'playfair-regular';
-  src: url(/assets/fonts/Playfair/PlayfairDisplay-Regular.ttf);
-}
-* {
-  letter-spacing: 2px;
-}
-
-.navbar-glass {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1030;
-
-  background-color: rgba(0, 0, 0, 0.4) !important;
-
-  /* Application du flou */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-}
-
-.logo-box {
-  background-color: #e0e0e0;
-  font-size: 24px;
-  letter-spacing: 0.5px;
-}
-
-.nav-links a {
-  font-family: 'playfair-regular', serif;
-  font-size: 24px;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-
-  &:hover {
-    opacity: 0.7;
+.navbar {
+  // Modificador de aspecto "Glass"
+  &--glass {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: $color-glass-bg !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px $color-glass-shadow;
   }
-}
 
-.btn-cta {
-  font-family: 'playfair-regular', serif;
-  font-size: 20px;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-//  BOUTON CTA INVERSÉ
-.btn-cta-inverse {
-  font-family: 'playfair-regular', serif;
-  font-size: 20px;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
+  &__logo {
+    background-color: $color-logo-bg;
+    color: $color-dark; // Forzado para mantener fidelidad
+    font-size: 24px;
+    letter-spacing: $letter-spacing-logo;
+  }
 
-//
-// CONTRÔLE DES VARIANTES DE COULEUR (Thèmes de page)
-//
+  // &__nav {
+  //   // Contenedor de enlaces
+  // }
 
-// Variante Sombre
-.nav-theme-dark {
-  .nav-links a {
-    color: #1a1a1a;
+  &__link {
+    font-family: $font-playfair;
+    font-size: 24px;
+    text-decoration: none;
+    transition:
+      opacity 0.2s ease,
+      color 0.2s ease;
 
-    /* Changement en blanc au survol */
     &:hover {
-      color: #ffffff;
+      opacity: 0.7;
     }
   }
 
-  .btn-cta {
-    color: #1a1a1a;
-    border: 1px solid #1a1a1a;
+  // &__toggler {
+  //   // Estilos específicos si el botón hamburguesa lo requiere en el futuro
+  // }
 
-    &:hover {
-      background-color: #1a1a1a;
-      color: #ffffff;
+  // &__icon {
+  //   // Hereda color del tema
+  // }
+
+  // MODIFICADORES DE TEMA (Controlan el color de los elementos internos)
+
+  &--theme-dark {
+    .navbar__link {
+      color: $color-dark;
+
+      &:hover {
+        color: $color-light;
+        opacity: 1; // Sobrescribe la opacidad global del link si es necesario
+      }
+    }
+
+    .navbar__icon {
+      color: $color-dark;
     }
   }
 
-  /* Nouveau bouton CTA inversé (Fond sombre -> Fond transparent) */
-  .btn-cta-inverse {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    border: 1px solid #1a1a1a;
+  &--theme-light {
+    .navbar__link {
+      color: $color-light;
 
-    &:hover {
-      background-color: transparent;
-      color: #1a1a1a;
+      &:hover {
+        color: $color-dark;
+        opacity: 1;
+      }
     }
-  }
 
-  .menu-burger-btn {
-    color: #1a1a1a;
-  }
-}
-
-// Variante Claire
-.nav-theme-light {
-  .nav-links a {
-    color: #ffffff;
-
-    /* Changement en noir au survol */
-    &:hover {
-      color: #1a1a1a;
+    .navbar__icon {
+      color: $color-light;
     }
   }
 }
