@@ -32,6 +32,15 @@
 .mariage-cards {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
+  & .btn {
+    background-color: #ea9981;
+    border: none;
+    &:hover {
+      box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+      background-color: #ea9981;
+      border: none;
+    }
+  }
 }
 
 .mariage-icons {
