@@ -8,6 +8,11 @@
   src: url(/assets/fonts/Playfair-Display/PlayfairDisplay-Regular.woff);
 }
 
+@font-face {
+  font-family: 'playfair-display-bold';
+  src: url(/assets/fonts/Playfair-Display/PlayfairDisplay-Bold.woff);
+}
+
 .mariage-banner-img {
   width: 100%;
   height: 50vh;
@@ -31,4 +36,16 @@
 
 .mariage-icons {
   color: #ea9981;
+}
+
+.mariage-h4 {
+  color: #ea9981;
+}
+
+.mariage-h3 {
+  font-family: 'playfair-display-bold';
+}
+
+.mariage-cards-text {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
