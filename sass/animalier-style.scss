@@ -30,7 +30,7 @@ $color-text-dark: #333333;
 // --- HERO SECTION ---
 .hero-prestations {
   position: relative;
-  min-height: 45vh;
+  min-height: 40vh;
   padding: 60px 0;
   overflow: hidden;
 
@@ -58,7 +58,6 @@ $color-text-dark: #333333;
     z-index: 2;
   }
 
-  // Ajustes para dispositivos móviles
   @media (max-width: 768px) {
     min-height: 45vh;
     padding: 40px 0;
@@ -71,14 +70,6 @@ $color-text-dark: #333333;
     }
   }
 }
-// // Boîte de texte
-// .hero-text-box {
-//   @media (max-width: 768px) {
-//     background-color: rgba(255, 255, 255, 0.5);
-//     padding: 20px;
-//     border-radius: 8px;
-//   }
-// }
 
 .hero-title {
   font-family: 'playfair-regular', Georgia, serif;
@@ -119,7 +110,7 @@ $color-text-dark: #333333;
 // --- SECTION INTRO (BANDEAU NOIR) ---
 
 .prestations-intro {
-  padding: 90px 0;
+  padding: 30px 0;
   background-color: #000000;
 
   @media (max-width: 768px) {
@@ -143,5 +134,168 @@ $color-text-dark: #333333;
     letter-spacing: 0.5px;
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+.mariage-icons {
+  color: $color-primary;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.prestation-card {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  background-color: transparent;
+
+  .prestation-card-title {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.375rem; // 22px
+    margin-bottom: 0;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 0.875rem; // 14px
+    line-height: 1.6;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+  }
+}
+
+.formules {
+  &__titre {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-size: clamp(1.4rem, 2.2vw, 1.875rem);
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: none;
+  }
+}
+
+.formule-card {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 32px 32px;
+
+  // ── Header ────────────────────────────────────────────────
+  &__header {
+    text-align: center;
+    padding-bottom: 24px;
+  }
+
+  &__label {
+    display: block;
+    font-family: 'playfair-regular', Georgia, serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+    text-transform: none;
+    margin-bottom: 2px;
+  }
+
+  &__name {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-weight: 600;
+    font-size: 2.5rem; // 40px
+    color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+
+  // A partir de
+
+  &__from {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-style: italic;
+    font-size: 0.9375rem; // 15px
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+    text-transform: none;
+    margin-bottom: 6px;
+  }
+
+  &__price {
+    font-family: 'playfair-regular', Georgia, serif;
+    font-size: 3.5rem; // ~56px — igual que Figma
+    font-weight: 400;
+    color: $color-primary; // #ea9981
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  &__list {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 24px;
+    margin-top: 24px;
+    flex: 1; // Empuja el footer al fondo
+
+    p {
+      font-family: 'montserrat-regular', Arial, sans-serif;
+      font-size: 0.8125rem; // 13px
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.5;
+      margin-bottom: 12px;
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+  }
+
+  &__check {
+    color: rgba(255, 255, 255, 0.45);
+    flex-shrink: 0;
+    font-size: 0.75rem;
+  }
+
+  &__footer {
+    padding-top: 24px;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    padding: 13px 16px;
+    background-color: $color-primary; // relleno sólido
+    color: #ffffff;
+    border: none;
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    font-size: 0.6875rem; // 11px — compacto como Figma
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+
+    &:hover {
+      background-color: darken(#ea9981, 10%);
+      color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .formule-card {
+    padding: 32px 24px 24px;
+
+    &__name {
+      font-size: 2rem;
+    }
+    &__price {
+      font-size: 2.75rem;
+    }
   }
 }
