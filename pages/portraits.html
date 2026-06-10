@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/assets/css/portraits-style.min.css" />
+    <!-- CSS intégré pour le layout Bento (grille asymétrique moderne) -->
+    <style>
+      /* Conteneur principal du Bento avec largeur maximale */
+      .bento-container {
+        max-width: 1200px;
+        margin: 0 auto; /* Centre le conteneur */
+      }
+
+      /* Style pour chaque élément du Bento (carte d'image) */
+      .bento-item {
+        position: relative; /* Pour positionner les éléments enfants */
+        overflow: hidden; /* Cache le débordement lors du zoom au survol */
+        border-radius: 8px; /* Coins arrondis */
+        margin-bottom: 15px; /* Espacement entre les éléments */
+      }
+
+      /* Style pour les images à l'intérieur des cartes */
+      .bento-item img {
+        width: 100%; /* L'image prend toute la largeur du conteneur */
+        height: 100%; /* L'image prend toute la hauteur du conteneur */
+        object-fit: cover; /* Recadre l'image pour remplir le conteneur sans déformation */
+        transition: transform 0.3s ease; /* Animation fluide lors du zoom */
+      }
+
+      /* Effet de zoom au survol de la souris */
+      .bento-item:hover img {
+        transform: scale(1.05); /* Agrandit l'image de 5% */
+      }
+
+      /* Définition des différentes tailles d'éléments */
+      .bento-small {
+        height: 190px; /* Petite hauteur pour les petites cartes */
+      }
+
+      .bento-medium {
+        height: 300px; /* Hauteur moyenne pour les cartes moyennes */
+      }
+
+      .bento-large {
+        height: 415px; /* Grande hauteur pour les grandes cartes */
+      }
+
+      /* Media query pour les petits écrans (smartphones) */
+      @media (max-width: 767.98px) {
+        /* Sur mobile, toutes les cartes ont la même hauteur */
+        .bento-small,
+        .bento-medium,
+        .bento-large {
+          height: 250px; /* Hauteur uniforme pour une meilleure expérience mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img class="mariage-banner-img" src="/assets/img/portrait/portrait-4.webp" alt="" />
+    </section>
+    <section class="bg-black text-light pb-5">
+      <div class="container p-4">
+        <h2 class="mariage-h2 text-center m-4">PORTRAITS</h2>
+        <p class="text-montserrat pb-4">
+          Votre portrait mérite bien plus qu’une simple photographie : il mérite une image qui
+          révèle votre personnalité et met en lumière ce qui vous rend unique. Que ce soit pour un
+          usage professionnel, artistique ou personnel, je vous accompagne dans une séance sur
+          mesure, pensée pour vous mettre à l’aise et valoriser votre authenticité. Mon approche
+          naturelle et bienveillante me permet de capturer des expressions sincères, des regards
+          confiants et des instants de spontanéité. Sublimés par une lumière soignée et des
+          ambiances élégantes, vos portraits deviennent des images intemporelles qui vous
+          ressemblent vraiment.
+        </p>
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="mariage-cards text-center p-4 h-100">
+              <i class="bi bi-camera fs-1 mariage-icons"></i>
+              <h3 class="pb-3">Reportage complet</h3>
+              <p class="text-montserrat">
+                Des préparatifs à la séance, chaque instant est capturé avec naturel et élégance.
+              </p>
+            </div>
+          </div>
+          <!-- répéter pour les 3 autres -->
+          <div class="col-6 col-md-3">
+            <div class="mariage-cards text-center p-4 h-100">
+              <i class="bi bi-heart fs-1 mariage-icons"></i>
+              <h3 class="mariage-h3">Emotions</h3>
+              <p class="text-montserrat">
+                Des images spontanées et sincères qui racontent votre histoire avec anthenticité.
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="mariage-cards text-center p-4 h-100">
+              <i class="bi bi-calendar fs-1 mariage-icons"></i>
+              <h3 class="mariage-h3">Accompagnement</h3>
+              <p class="text-montserrat">
+                Un accompagnement personnalisé avant, pendant et après votre séance.
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="mariage-cards text-center p-4 h-100">
+              <i class="bi bi-image fs-1 mariage-icons"></i>
+              <h3 class="mariage-h3">Qualité premium</h3>
+              <p class="text-montserrat">
+                Des photographies soigneusement retouchées pour un rendu intemporel et raffiné.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-5">
+      <h2 class="mariage-h2 text-center pt-5">Quelques moments capturés</h2>
+      <!-- Conteneur Bootstrap avec padding vertical (py-4) -->
+      <div class="container py-4">
+        <!-- Conteneur principal du layout Bento -->
+        <div class="bento-container">
+          <!-- row g-3 : ligne Bootstrap avec gutter (espacement) de 3 entre les colonnes -->
+          <div class="row g-3">
+            <!-- ========== PREMIÈRE LIGNE ========== -->
+            <!-- Grande carte occupant 8 colonnes sur 12 (66% de largeur sur desktop) -->
+            <div class="col-md-8">
+              <div class="bento-item bento-large">
+                <img src="/assets/img/portrait/portrait-1.webp" alt="Image grande 1" />
+              </div>
+            </div>
+            <!-- Colonne de 4 unités (33% de largeur) contenant 2 petites cartes empilées -->
+            <div class="col-md-4">
+              <!-- Sous-grille pour empiler verticalement les petites cartes -->
+              <div class="row g-3">
+                <!-- Première petite carte (col-12 = 100% de la largeur disponible) -->
+                <div class="col-12">
+                  <div class="bento-item bento-small">
+                    <img src="/assets/img/portrait/portrait-2.webp" alt="Image petite 1" />
+                  </div>
+                </div>
+                <!-- Deuxième petite carte -->
+                <div class="col-12">
+                  <div class="bento-item bento-small">
+                    <img src="/assets/img/portrait/portrait-4.webp" alt="Image petite 2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========== DEUXIÈME LIGNE ========== -->
+            <!-- Trois cartes moyennes de taille égale (4+4+4 = 12 colonnes = 100%) -->
+            <div class="col-md-4">
+              <div class="bento-item bento-medium">
+                <img src="/assets/img/portrait/sensualite-1.webp" alt="Image moyenne 1" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bento-item bento-medium">
+                <img src="/assets/img/portrait/portrait-7.webp" alt="Image moyenne 2" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bento-item bento-medium">
+                <img src="/assets/img/portrait/portait-6.webp" alt="Image moyenne 3" />
+              </div>
+            </div>
+          </div>
+          <!-- Fin de la grille principale -->
+        </div>
+        <!-- Fin du conteneur Bento -->
+      </div>
+      <!-- Fin du conteneur Bootstrap -->
+    </section>
+    <section class="bg-black text-light py-5">
+      <div class="container p-4">
+        <h2 class="mariage-h2 text-center m-4 pb-4">Des prestations adaptées à chaque histoire</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div
+              class="mariage-cards text-center p-4 h-100 d-flex flex-column justify-content-between"
+            >
+              <div>
+                <h3 class="mariage-h3">Formule 1</h3>
+                <h4 class="mariage-h4 fs-1 pb-3 text-montserrat">1 600€</h4>
+                <div class="mariage-cards-text text-start text-montserrat">
+                  <p class="pt-4">✔ 200 photos</p>
+                  <p>✔ 4h de présence</p>
+                  <p>✔ Accompagnement / conseils</p>
+                  <p>✔ Retouches</p>
+                  <p>✔ Cérémonie religieuse / laïque ou civile</p>
+                  <p>✔ Vin d'honneur</p>
+                  <p>✔ Photos de groupe</p>
+                </div>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary rounded-0 w-100 text-black">
+                  Réserver cette formule
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div
+              class="mariage-cards text-center p-4 h-100 d-flex flex-column justify-content-between"
+            >
+              <div>
+                <h3 class="mariage-h3">Formule 2</h3>
+                <h4 class="mariage-h4 fs-1 pb-3 text-montserrat">1 900€</h4>
+                <div class="mariage-cards-text text-start text-montserrat">
+                  <p class="pt-4">✔ 300 photos</p>
+                  <p>✔ 7h de présence</p>
+                  <p>✔ Accompagnement / conseils</p>
+                  <p>✔ Retouches</p>
+                  <p>✔ Préparatifs</p>
+                  <p>✔ Cérémonie religieuse / laïque ou civile</p>
+                  <p>✔ Vin d'honneur</p>
+                  <p>✔ Photos de groupe</p>
+                  <p>✔ Photos de couple</p>
+                </div>
+              </div>
+              <div>
+                <button type="button" class="btn rounded-0 w-100 text-black">
+                  Réserver cette formule
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mariage-cards text-center p-4 h-100">
+              <div>
+                <h3 class="mariage-h3">Formule 3</h3>
+                <h4 class="mariage-h4 fs-1 pb-3 text-montserrat">2 900€</h4>
+                <div
+                  class="mariage-cards-text text-start text-montserrat d-flex flex-column justify-content-between"
+                >
+                  <p class="pt-4">✔ Pas de limites de photos</p>
+                  <p>✔ 12h de présence</p>
+                  <p>✔ Accompagnement / conseils</p>
+                  <p>✔ Retouches</p>
+                  <p>✔ Préparatifs</p>
+                  <p>✔ Cérémonie religieuse / laïque ou civile</p>
+                  <p>✔ Vin d'honneur</p>
+                  <p>✔ Photos de groupe</p>
+                  <p>✔ Ouverture de bal</p>
+                </div>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary rounded-0 w-100 text-black">
+                  Réserver cette formule
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
