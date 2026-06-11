@@ -636,7 +636,7 @@ $letter-spacing-logo: 3px;
   }
 }
 
-// Thème sombre (liens noirs)
+// Thème sombre
 .nav-theme-dark {
   .nav-links a {
     color: $color-dark;
@@ -650,9 +650,22 @@ $letter-spacing-logo: 3px;
   .menu-burger-btn i {
     color: $color-dark;
   }
+
+  .btn-cta--navbar {
+    background-color: transparent;
+    color: $color-dark;
+    border: 1px solid $color-dark;
+    font-family: $font-playfair;
+    font-size: 20px;
+
+    &:hover {
+      background-color: $color-dark;
+      color: $color-light;
+    }
+  }
 }
 
-// Thème clair (liens blancs)
+// Thème clair
 .nav-theme-light {
   .nav-links a {
     color: $color-light;
@@ -665,6 +678,19 @@ $letter-spacing-logo: 3px;
 
   .menu-burger-btn i {
     color: $color-light;
+  }
+
+  .btn-cta--navbar {
+    background-color: transparent;
+    color: $color-light;
+    border: 1px solid $color-light;
+    font-family: $font-playfair;
+    font-size: 20px;
+
+    &:hover {
+      background-color: $color-light;
+      color: $color-dark;
+    }
   }
 }
 
