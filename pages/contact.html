@@ -4,50 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/assets/css/contact-style.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/main.min.css" />
   </head>
-  <body>
-    <div>
-      <img
-        class="banner-mobile d-block d-md-none"
-        src="/assets/img/animalier/canin-17.webp"
-        alt=""
-      />
-      <img
-        class="banner-desktop d-none d-md-block"
-        src="/assets/img/mariage/mariage-45.webp"
-        alt=""
-      />
-      <h1>Créons des <span>Souvenirs</span><br />qui vous ressemblent</h1>
+  <body class="page-contact">
+    <div style="position: relative;">
+      <img class="contact-banner-mobile d-block d-md-none" src="/assets/img/animalier/canin-17.webp" alt="" />
+      <img class="contact-banner-desktop d-none d-md-block" src="/assets/img/mariage/mariage-45.webp" alt="" />
+      <h1 class="contact-hero-title">
+        Créons des <span class="contact-hero-title__highlight">Souvenirs</span><br />qui vous ressemblent
+      </h1>
     </div>
-    <!-- Première section avec un tableau de réassurance avec des chiffres clés -->
     <section>
-      <table class="table table-bordered text-center m-0">
+      <table class="table table-bordered text-center m-0 contact-table">
         <tbody>
           <tr>
             <td class="col-6 table-row">
-              <span class="table--bold fs-5">15+</span><br />
+              <span class="contact-table__bold fs-5">15+</span><br />
               Ans à capturer vos émotions
             </td>
             <td class="col-6 table-row">
-              <span class="table--bold fs-5">500+</span><br />
+              <span class="contact-table__bold fs-5">500+</span><br />
               Séances réalisées
             </td>
           </tr>
-
           <tr>
             <td class="col-6 table-row">
-              <span class="table--bold fs-5">50 000+</span><br />
+              <span class="contact-table__bold fs-5">50 000+</span><br />
               Photos livrées
             </td>
             <td class="col-6 table-row">
-              <span class="table--bold fs-5">100%</span><br />
+              <span class="contact-table__bold fs-5">100%</span><br />
               Passion
             </td>
           </tr>
@@ -58,7 +45,7 @@
       <h2 class="text-light fs-4 fs-md-3 text-center py-2">
         Et si nous écrivions votre histoire en images ?
       </h2>
-      <h3 class="text-light fs-5 fs-md-4 text-center h3-italic py-2">
+      <h3 class="text-light fs-5 fs-md-4 text-center contact-h3-italic py-2">
         Parlez-moi de votre projet, je vous réponds sous 48h.
       </h3>
       <div class="row py-4">
@@ -71,11 +58,11 @@
             Mariage, portrait, famille ou événement professionnel.<br />
             <span class="text-orange">Racontez-moi</span> votre projet.
           </p>
-          <p class="text-extralight step-indicator">1 sur 3</p>
+          <p class="contact-text-extralight contact-step-indicator">1 sur 3</p>
           <form class="row g-3 py-4">
-            <div class="col table-font">
+            <div class="col contact-font">
               <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-              <select class="form-select table-font" id="autoSizingSelect">
+              <select class="form-select contact-font" id="autoSizingSelect">
                 <option selected>Type de prestation</option>
                 <option value="1">Mariage</option>
                 <option value="2">Maternité</option>
@@ -86,11 +73,11 @@
             </div>
             <div class="col-12 py-2">
               <div class="row g-0">
-                <div class="col-6 table-font">
+                <div class="col-6 contact-font">
                   <label class="form-label">Date de début</label>
                   <input type="date" class="form-control rounded-start rounded-end-0" />
                 </div>
-                <div class="col-6 table-font">
+                <div class="col-6 contact-font">
                   <label class="form-label">Date de fin</label>
                   <input type="date" class="form-control rounded-start-0 rounded-end" />
                 </div>
@@ -101,78 +88,60 @@
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="btn-next btn btn-primary rounded-0 w-100 text-black">
+              <button type="button" class="btn-next btn contact-btn rounded-0 w-100 text-black">
                 C'est bientôt fini
               </button>
             </div>
           </form>
         </div>
-
         <!-- Étape 2 -->
         <div class="form-step d-none col-12 col-md-6 text-light" id="step-2">
           <p>
             Mariage, portrait, famille ou événement professionnel.<br />
             <span class="text-orange">Racontez-moi</span> votre projet.
           </p>
-          <p class="text-extralight step-indicator">2 sur 3</p>
+          <p class="contact-text-extralight contact-step-indicator">2 sur 3</p>
           <form class="row py-4">
             <div class="col-12 py-2">
               <div class="row g-0">
-                <div class="col-6 table-font">
+                <div class="col-6 contact-font">
                   <label class="form-label">Nom</label>
-                  <input
-                    type="text"
-                    class="form-control rounded-start rounded-end-0"
-                    placeholder="Dupont"
-                  />
+                  <input type="text" class="form-control rounded-start rounded-end-0" placeholder="Dupont" />
                 </div>
-                <div class="col-6 table-font">
+                <div class="col-6 contact-font">
                   <label class="form-label">Prénom</label>
-                  <input
-                    type="text"
-                    class="form-control rounded-start-0 rounded-end"
-                    placeholder="Jean"
-                  />
+                  <input type="text" class="form-control rounded-start-0 rounded-end" placeholder="Jean" />
                 </div>
               </div>
               <div class="row g-0">
-                <div class="col-6 table-font pt-2">
+                <div class="col-6 contact-font pt-2">
                   <label class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control rounded-start rounded-end-0"
-                    placeholder="jean.dupont@email.com"
-                  />
+                  <input type="email" class="form-control rounded-start rounded-end-0" placeholder="jean.dupont@email.com" />
                 </div>
-                <div class="col-6 table-font pt-2">
+                <div class="col-6 contact-font pt-2">
                   <label class="form-label">Téléphone</label>
-                  <input
-                    type="tel"
-                    class="form-control rounded-start-0 rounded-end"
-                    placeholder="06 00 00 00 00"
-                  />
+                  <input type="tel" class="form-control rounded-start-0 rounded-end" placeholder="06 00 00 00 00" />
                 </div>
               </div>
             </div>
             <div class="col-12 pt-4">
-              <button type="button" class="btn-next btn btn-primary rounded-0 w-100 text-black">
+              <button type="button" class="btn-next btn contact-btn rounded-0 w-100 text-black">
                 Encore un effort
               </button>
             </div>
           </form>
         </div>
-
         <!-- Étape 3 -->
         <div class="form-step d-none col-12 col-md-6 text-light" id="step-3">
           <p>
             Mariage, portrait, famille ou événement professionnel.<br />
             <span class="text-orange">Racontez-moi</span> votre projet.
           </p>
-          <p class="text-extralight step-indicator">3 sur 3</p>
+          <p class="contact-text-extralight contact-step-indicator">3 sur 3</p>
           <form class="row g-3 py-4">
-            <div class="col table-font">
-              <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-              <select class="form-select table-font" id="autoSizingSelect">
+            <div class="col contact-font">
+              <label class="visually-hidden" for="autoSizingSelect2">Preference</label>
+              <select class="form-select contact-font" id="autoSizingSelect2">
                 <option selected>Comment avez-vous connu LAPhotographie33 ?</option>
                 <option value="1">Bouche à oreille</option>
                 <option value="2">Google</option>
@@ -183,15 +152,11 @@
             <div class="col-12 py-2">
               <div class="row g-0">
                 <label class="form-label">Message</label>
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  placeholder="Décrivez votre projet..."
-                ></textarea>
+                <textarea class="form-control" rows="5" placeholder="Décrivez votre projet..."></textarea>
               </div>
             </div>
             <div class="col-12">
-              <button type="button" class="btn btn-next rounded-0 w-100 text-black">
+              <button type="button" class="btn btn-next contact-btn rounded-0 w-100 text-black">
                 Planifions votre séance
               </button>
             </div>
@@ -202,37 +167,32 @@
     <section class="py-5">
       <h2 class="fs-4 fs-md-3 text-center py-5">À leurs côtés, appareil en main.</h2>
       <div class="row justify-content-center align-items-center py-5">
-        <div class="logos col-12 col-md-2 d-flex justify-content-center py-3">
+        <div class="contact-logos col-12 col-md-2 d-flex justify-content-center py-3">
           <img class="img-fluid w-75" src="/assets/img/onlyyou1.webp" alt="" />
         </div>
-        <div class="logos col-6 col-md-3 d-flex justify-content-center py-3">
+        <div class="contact-logos col-6 col-md-3 d-flex justify-content-center py-3">
           <img class="img-fluid w-75" src="/assets/img/Sudouest-1.webp" alt="" />
         </div>
-        <div class="logos col-6 col-md-3 d-flex justify-content-center py-3">
+        <div class="contact-logos col-6 col-md-3 d-flex justify-content-center py-3">
           <img class="img-fluid w-75" src="/assets/img/Ligne-Divine-1.webp" alt="" />
         </div>
       </div>
-
       <div class="row justify-content-center align-items-center">
-        <div class="logos col-6 col-md-3 d-flex justify-content-center py-3">
+        <div class="contact-logos col-6 col-md-3 d-flex justify-content-center py-3">
           <img class="img-fluid w-75" src="/assets/img/Pessac-Basket-1.webp" alt="" />
         </div>
-        <div class="logos col-6 col-md-3 d-flex justify-content-center py-3">
+        <div class="contact-logos col-6 col-md-3 d-flex justify-content-center py-3">
           <img class="img-fluid w-75" src="/assets/img/haute-gironde-1.webp" alt="" />
         </div>
-        <div class="logos col-6 col-md-3 d-flex justify-content-center py-3">
+        <div class="contact-logos col-6 col-md-3 d-flex justify-content-center py-3">
           <img class="img-fluid w-75" src="/assets/img/mairie-talence-logo-1.webp" alt="" />
         </div>
-        <div class="logos col-6 col-md-3 d-flex justify-content-center py-3">
+        <div class="contact-logos col-6 col-md-3 d-flex justify-content-center py-3">
           <img class="img-fluid w-75" src="/assets/img/Basket-gironde-1.webp" alt="" />
         </div>
       </div>
     </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="/assets/js/contact-script.js"></script>
   </body>
 </html>
