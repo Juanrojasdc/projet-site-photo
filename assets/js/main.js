@@ -23,6 +23,15 @@ $(document).ready(function () {
       }
     });
 
+    // --- Chargement de la section galerie ---
+    $('#section-galerie').load('pages/section-galerie.html', function (response, status, xhr) {
+      if (status === 'error') {
+        console.error('Erreur section galerie : ' + xhr.status + ' ' + xhr.statusText);
+      } else {
+        console.log('Section galerie chargé avec succès.');
+      }
+    });
+
     // --- Chargement du bloc illustration/contact ---
     $('#buttons-prestations').load(
       'pages/illustration-contact.html',
