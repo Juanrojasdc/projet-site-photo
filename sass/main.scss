@@ -616,7 +616,6 @@ $letter-spacing-logo: 3px;
   // Fondo inicial transparente
   background-color: transparent;
 
-  // Cuando le añadimos la clase .scrolled, aplicamos el estilo
   &.scrolled {
     background-color: $color-glass-bg !important;
     backdrop-filter: blur(12px);
@@ -627,21 +626,31 @@ $letter-spacing-logo: 3px;
 
 .logo-box {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
-  letter-spacing: $letter-spacing-logo;
-}
+  display: inline-block;
 
+  // Ajuste del tamaño de la imagen dentro del logo
+  .logo-img {
+    width: 120px;
+    height: auto;
+    display: block;
+  }
+}
 .nav-links {
   a {
-    font-family: $font-playfair;
+    font-family: $font-playfair !important;
+    text-decoration: none !important;
+
+    // ELIMINAMOS 'color: inherit !important'
+    // Ahora el color lo definen exclusivamente los temas (dark/light)
     font-size: 24px;
-    text-decoration: none;
     transition:
       opacity 0.2s ease,
       color 0.2s ease;
+    cursor: pointer;
 
     &:hover {
-      opacity: 0.7;
+      text-decoration: none !important;
+      opacity: 0.7; // Esto crea el efecto de desvanecimiento
     }
   }
 }
@@ -2084,7 +2093,7 @@ $color-text-dark: #222222;
   // On recule d'un dossier (../) pour arriver dans /assets/, puis on va dans /img/
   background-image: url('../img/mariage/mariage-35.webp');
   background-size: cover;
-  background-position: center center;
+  background-position: center 25%;
   background-repeat: no-repeat;
 
   // Hauteur de la section
