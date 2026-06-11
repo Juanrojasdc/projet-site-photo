@@ -230,6 +230,13 @@ $letter-spacing-logo: 3px;
   display: block;
 }
 
+.maternite-banner-img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  display: block;
+}
+
 .text-montserrat {
   font-family: 'montserrat', Arial, sans-serif;
 }
