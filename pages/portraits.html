@@ -88,17 +88,28 @@
         <div class="bento-container">
           <div class="row g-3">
             <div class="col-md-8">
-              <div class="bento-item bento-large rounded-0">
+              <div
+                class="bento-item bento-large rounded-0"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-portrait-1"
+                style="cursor: pointer"
+              >
                 <img
                   src="/assets/img/portrait/portrait-1.webp"
                   alt="Mère et enfant de dos descendant une dune de sable vers l'océan, robe longue à fleurs bleues au vent"
                 />
               </div>
             </div>
+
             <div class="col-md-4">
               <div class="row g-3">
                 <div class="col-12">
-                  <div class="bento-item bento-small rounded-0">
+                  <div
+                    class="bento-item bento-small rounded-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-portrait-2"
+                    style="cursor: pointer"
+                  >
                     <img
                       src="/assets/img/portrait/portrait-2.webp"
                       alt="Famille de trois personnes de dos face à l'océan au coucher du soleil, père tenant son enfant dans les bras"
@@ -106,7 +117,12 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <div class="bento-item bento-small rounded-0">
+                  <div
+                    class="bento-item bento-small rounded-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-portrait-4"
+                    style="cursor: pointer"
+                  >
                     <img
                       src="/assets/img/portrait/portrait-4.webp"
                       alt="Silhouette d'une famille assise sur une dune au coucher du soleil, ciel nuageux et lumière dorée"
@@ -115,24 +131,42 @@
                 </div>
               </div>
             </div>
+
             <div class="col-md-4">
-              <div class="bento-item bento-medium rounded-0">
+              <div
+                class="bento-item bento-medium rounded-0"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-sensualite-1"
+                style="cursor: pointer"
+              >
                 <img
                   src="/assets/img/portrait/sensualite-1.webp"
                   alt="Portrait en noir et blanc d'un homme torse nu de profil, fond sombre"
                 />
               </div>
             </div>
+
             <div class="col-md-4">
-              <div class="bento-item bento-medium rounded-0">
+              <div
+                class="bento-item bento-medium rounded-0"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-portrait-7"
+                style="cursor: pointer"
+              >
                 <img
                   src="/assets/img/portrait/portrait-7.webp"
                   alt="Portrait d'une femme aux cheveux longs au vent, éclairée par la lumière dorée du coucher de soleil en bord de mer"
                 />
               </div>
             </div>
+
             <div class="col-md-4">
-              <div class="bento-item bento-medium rounded-0">
+              <div
+                class="bento-item bento-medium rounded-0"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-portait-6"
+                style="cursor: pointer"
+              >
                 <img
                   src="/assets/img/portrait/portait-6.webp"
                   alt="Mère souriant joue contre joue avec son jeune enfant hilare, en extérieur dans un jardin"
@@ -143,6 +177,145 @@
         </div>
       </div>
     </section>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal-portrait-1" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/portrait/portrait-1.webp"
+              alt="Mère et enfant de dos descendant une dune de sable vers l'océan, robe longue à fleurs bleues au vent"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-portrait-2" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/portrait/portrait-2.webp"
+              alt="Famille de trois personnes de dos face à l'océan au coucher du soleil, père tenant son enfant dans les bras"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-portrait-4" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/portrait/portrait-4.webp"
+              alt="Silhouette d'une famille assise sur une dune au coucher du soleil, ciel nuageux et lumière dorée"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-sensualite-1" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/portrait/sensualite-1.webp"
+              alt="Portrait en noir et blanc d'un homme torse nu de profil, fond sombre"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-portrait-7" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/portrait/portrait-7.webp"
+              alt="Portrait d'une femme aux cheveux longs au vent, éclairée par la lumière dorée du coucher de soleil en bord de mer"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-portait-6" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/portrait/portait-6.webp"
+              alt="Mère souriant joue contre joue avec son jeune enfant hilare, en extérieur dans un jardin"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="bg-black text-light py-5">
       <div class="container p-4">
         <h2 class="mariage-h2 text-center m-4 pb-4">Des prestations adaptées à chaque histoire</h2>
