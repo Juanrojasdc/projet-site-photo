@@ -81,21 +81,32 @@
     </section>
     <section class="p-5">
       <h2 class="mariage-h2 text-center pt-5">Quelques moments capturés</h2>
-      <div class="container py-4">
+      <div class="container py-4 menu__grid">
         <div class="bento-container">
           <div class="row g-3">
             <div class="col-md-8">
-              <div class="bento-item bento-large rounded-0">
+              <div
+                class="bento-item bento-large rounded-0 menu__card"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-equin-2"
+                style="cursor: pointer"
+              >
                 <img
                   src="/assets/img/animalier/equin-2.webp"
                   alt="Cavalière à cheval en silhouette contre un coucher de soleil à travers les arbres"
                 />
               </div>
             </div>
+
             <div class="col-md-4">
               <div class="row g-3">
                 <div class="col-12">
-                  <div class="bento-item bento-small rounded-0">
+                  <div
+                    class="bento-item bento-small rounded-0 menu__card"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-equin-5"
+                    style="cursor: pointer"
+                  >
                     <img
                       src="/assets/img/animalier/equin-5.webp"
                       alt="Portrait d'une jeune femme souriante, joue contre le museau d'un cheval"
@@ -103,7 +114,12 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <div class="bento-item bento-small rounded-0">
+                  <div
+                    class="bento-item bento-small rounded-0 menu__card"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-canin-5"
+                    style="cursor: pointer"
+                  >
                     <img
                       src="/assets/img/animalier/canin-5.webp"
                       alt="Femme souriante tenant dans ses bras un bouvier bernois, assise en extérieur"
@@ -112,27 +128,45 @@
                 </div>
               </div>
             </div>
+
             <div class="col-md-4">
-              <div class="bento-item bento-medium rounded-0">
+              <div
+                class="bento-item bento-medium rounded-0 menu__card"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-canin-3"
+                style="cursor: pointer"
+              >
                 <img
                   src="/assets/img/animalier/canin-3.webp"
                   alt="Chiot Rottweiler couché dans l'herbe devant des rosiers en fleurs roses"
                 />
               </div>
             </div>
+
             <div class="col-md-4">
-              <div class="bento-item bento-medium rounded-0">
+              <div
+                class="bento-item bento-medium rounded-0 menu__card"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-canin-15"
+                style="cursor: pointer"
+              >
                 <img
                   src="/assets/img/animalier/canin-15.webp"
                   alt="Chiot à poil long et clair courant dans l'herbe en plein air"
                 />
               </div>
             </div>
+
             <div class="col-md-4">
-              <div class="bento-item bento-medium rounded-0">
+              <div
+                class="bento-item bento-medium rounded-0 menu__card"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-canin-6"
+                style="cursor: pointer"
+              >
                 <img
                   src="/assets/img/animalier/canin-6.webp"
-                  alt="Chien de type Akita au premier plan, langue tirée, avec une femme souriante en arrière-plan dans un jardin"
+                  alt="Chien de type Akita au premier plan, langue tirée, avec une femme souriante en arrière-plan"
                 />
               </div>
             </div>
@@ -140,6 +174,144 @@
         </div>
       </div>
     </section>
+    <!-- Modals -->
+    <div class="modal fade" id="modal-equin-2" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/animalier/equin-2.webp"
+              alt="Cavalière à cheval en silhouette contre un coucher de soleil à travers les arbres"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-equin-5" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/animalier/equin-5.webp"
+              alt="Portrait d'une jeune femme souriante, joue contre le museau d'un cheval"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-canin-5" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/animalier/canin-5.webp"
+              alt="Femme souriante tenant dans ses bras un bouvier bernois, assise en extérieur"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-canin-3" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/animalier/canin-3.webp"
+              alt="Chiot Rottweiler couché dans l'herbe devant des rosiers en fleurs roses"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-canin-15" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/animalier/canin-15.webp"
+              alt="Chiot à poil long et clair courant dans l'herbe en plein air"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-canin-6" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0 position-absolute top-0 end-0 z-3 p-3">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center p-0">
+            <img
+              src="/assets/img/animalier/canin-6.webp"
+              alt="Chien de type Akita au premier plan, langue tirée, avec une femme souriante en arrière-plan"
+              class="img-fluid"
+              style="max-height: 100vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="bg-black text-light py-5">
       <div class="container p-4">
         <h2 class="mariage-h2 text-center m-4 pb-4">Des prestations adaptées à chaque histoire</h2>
@@ -219,5 +391,9 @@
         </div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
