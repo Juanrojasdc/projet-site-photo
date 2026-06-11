@@ -5,24 +5,22 @@
 //  sélecteurs nus qui entraient en conflit
 // ============================================================
 
-
 // ============================================================
 //  VARIABLES GLOBALES
 // ============================================================
 
-$color-primary:     #ea9981;
-$color-text-dark:   #333333;
-$color-dark:        #000000;
-$color-light:       #ffffff;
-$color-glass-bg:    rgba(255, 255, 255, 0.15);
+$color-primary: #ea9981;
+$color-text-dark: #333333;
+$color-dark: #000000;
+$color-light: #ffffff;
+$color-glass-bg: rgba(255, 255, 255, 0.15);
 $color-glass-shadow: rgba(0, 0, 0, 0.1);
 
-$font-playfair:    'playfair-regular', Georgia, serif;
-$font-montserrat:  'montserrat-regular', Arial, sans-serif;
-$font-inter:       'inter-regular', Arial, sans-serif;
+$font-playfair: 'playfair-regular', Georgia, serif;
+$font-montserrat: 'montserrat-regular', Arial, sans-serif;
+$font-inter: 'inter-regular', Arial, sans-serif;
 
 $letter-spacing-logo: 3px;
-
 
 // ============================================================
 //  @FONT-FACE (déclarés une seule fois)
@@ -98,7 +96,6 @@ $letter-spacing-logo: 3px;
   font-display: swap;
 }
 
-
 // ============================================================
 //  COMPOSANTS PARTAGÉS
 //  (utilisés sur plusieurs pages, pas de scope nécessaire)
@@ -132,9 +129,15 @@ $letter-spacing-logo: 3px;
   }
 }
 
-.bento-small  { height: 190px; }
-.bento-medium { height: 300px; }
-.bento-large  { height: 415px; }
+.bento-small {
+  height: 190px;
+}
+.bento-medium {
+  height: 300px;
+}
+.bento-large {
+  height: 415px;
+}
 
 .bento-vertical {
   height: 100%;
@@ -221,6 +224,13 @@ $letter-spacing-logo: 3px;
 }
 
 .mariage-banner-img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  display: block;
+}
+
+.maternite-banner-img {
   width: 100%;
   height: 50vh;
   object-fit: cover;
@@ -340,7 +350,9 @@ $letter-spacing-logo: 3px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
 
     &:hover {
       background-color: darken(#ea9981, 10%);
@@ -353,8 +365,12 @@ $letter-spacing-logo: 3px;
   .formule-card {
     padding: 32px 24px 24px;
 
-    &__name  { font-size: 2rem; }
-    &__price { font-size: 2.75rem; }
+    &__name {
+      font-size: 2rem;
+    }
+    &__price {
+      font-size: 2.75rem;
+    }
   }
 }
 
@@ -480,7 +496,9 @@ $letter-spacing-logo: 3px;
     padding: 40px;
     background-color: $color-light;
     border-radius: 16px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow:
+      4px 4px 4px rgba(0, 0, 0, 0.25),
+      0 4px 4px rgba(0, 0, 0, 0.25);
 
     .illustration-contact__card-title {
       margin: 0;
@@ -523,7 +541,9 @@ $letter-spacing-logo: 3px;
     text-align: center;
     text-decoration: none;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.25s ease, transform 0.25s ease;
+    transition:
+      background-color 0.25s ease,
+      transform 0.25s ease;
 
     &:hover,
     &:focus-visible {
@@ -543,7 +563,9 @@ $letter-spacing-logo: 3px;
     background-position: center top;
     background-size: cover;
 
-    &__image { display: none; }
+    &__image {
+      display: none;
+    }
 
     &__card {
       width: min(312px, calc(100% - 32px));
@@ -577,7 +599,6 @@ $letter-spacing-logo: 3px;
   }
 }
 
-
 // ============================================================
 //  PAGE : NAVBAR
 //  <body class="page-navbar">
@@ -605,7 +626,9 @@ $letter-spacing-logo: 3px;
     font-family: $font-playfair;
     font-size: 24px;
     text-decoration: none;
-    transition: opacity 0.2s ease, color 0.2s ease;
+    transition:
+      opacity 0.2s ease,
+      color 0.2s ease;
 
     &:hover {
       opacity: 0.7;
@@ -659,7 +682,6 @@ $letter-spacing-logo: 3px;
   }
 }
 
-
 // ============================================================
 //  PAGE : FOOTER
 //  <body class="page-footer">
@@ -667,7 +689,6 @@ $letter-spacing-logo: 3px;
 // ============================================================
 
 .page-footer {
-
   * {
     font-family: 'inter-regular', Arial, sans-serif;
   }
@@ -705,7 +726,6 @@ $letter-spacing-logo: 3px;
   }
 }
 
-
 // ============================================================
 //  PAGE : CONTACT
 //  <body class="page-contact">
@@ -713,7 +733,6 @@ $letter-spacing-logo: 3px;
 // ============================================================
 
 .page-contact {
-
   * {
     font-family: 'playfair-display', Georgia, serif;
   }
@@ -793,14 +812,12 @@ $letter-spacing-logo: 3px;
   }
 }
 
-
 // ============================================================
 //  PAGE : À PROPOS
 //  <body class="page-about">
 // ============================================================
 
 .page-about {
-
   // HERO
   .hero-about {
     background-image: url('/assets/img/aurelien-5.webp');
@@ -818,10 +835,10 @@ $letter-spacing-logo: 3px;
     }
 
     &__overlay {
-      background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%);
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
 
       @media (max-width: 768px) {
-        background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
       }
     }
 
@@ -831,9 +848,13 @@ $letter-spacing-logo: 3px;
       line-height: 1.1;
       letter-spacing: 1px;
 
-      span { font-family: $font-playfair; }
+      span {
+        font-family: $font-playfair;
+      }
 
-      @media (max-width: 768px) { font-size: 32px; }
+      @media (max-width: 768px) {
+        font-size: 32px;
+      }
     }
 
     &__text {
@@ -843,7 +864,9 @@ $letter-spacing-logo: 3px;
       max-width: 90%;
       opacity: 0.9;
 
-      @media (max-width: 768px) { font-size: 16px; }
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -857,7 +880,9 @@ $letter-spacing-logo: 3px;
       line-height: 1.3;
       font-weight: normal;
 
-      @media (max-width: 768px) { font-size: 24px; }
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
     }
 
     &__highlight {
@@ -909,9 +934,14 @@ $letter-spacing-logo: 3px;
       line-height: 1.2;
       letter-spacing: 0.5px;
 
-      span { font-family: $font-playfair; font-style: italic; }
+      span {
+        font-family: $font-playfair;
+        font-style: italic;
+      }
 
-      @media (max-width: 768px) { font-size: 36px; }
+      @media (max-width: 768px) {
+        font-size: 36px;
+      }
     }
 
     &__box {
@@ -933,7 +963,9 @@ $letter-spacing-logo: 3px;
       font-size: 48px;
       color: #6c757d;
 
-      @media (max-width: 768px) { font-size: 40px; }
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
     }
 
     &__subtitle {
@@ -941,7 +973,9 @@ $letter-spacing-logo: 3px;
       font-size: 48px;
       line-height: 1.1;
 
-      @media (max-width: 768px) { font-size: 40px; }
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
     }
 
     &__text {
@@ -964,7 +998,9 @@ $letter-spacing-logo: 3px;
       letter-spacing: 0.5px;
       font-weight: normal;
 
-      @media (max-width: 768px) { font-size: 36px; }
+      @media (max-width: 768px) {
+        font-size: 36px;
+      }
     }
 
     &__divider {
@@ -997,7 +1033,9 @@ $letter-spacing-logo: 3px;
       font-size: 96px;
       line-height: 1;
 
-      @media (max-width: 768px) { font-size: 64px; }
+      @media (max-width: 768px) {
+        font-size: 64px;
+      }
     }
 
     &__label {
@@ -1006,11 +1044,12 @@ $letter-spacing-logo: 3px;
       letter-spacing: 2px;
       margin-top: 15px;
 
-      @media (max-width: 768px) { font-size: 18px; }
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
     }
   }
 }
-
 
 // ============================================================
 //  PAGE : FAQ
@@ -1018,7 +1057,6 @@ $letter-spacing-logo: 3px;
 // ============================================================
 
 .page-faq {
-
   // HERO
   .hero-faq {
     background-image: url('/assets/img/mariage/mariage-7.webp');
@@ -1028,7 +1066,9 @@ $letter-spacing-logo: 3px;
     text-align: center;
     min-height: 50vh;
 
-    @media (max-width: 768px) { min-height: 45vh; }
+    @media (max-width: 768px) {
+      min-height: 45vh;
+    }
 
     .hero-faq__title {
       font-family: $font-playfair;
@@ -1037,7 +1077,9 @@ $letter-spacing-logo: 3px;
       margin: 0;
       letter-spacing: 4px;
 
-      @media (max-width: 768px) { font-size: 40px; }
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
     }
 
     .hero-faq__text-box {
@@ -1097,7 +1139,10 @@ $letter-spacing-logo: 3px;
         padding-left: 0;
         padding-top: 60px;
 
-        .step-number { top: 0; left: 0; }
+        .step-number {
+          top: 0;
+          left: 0;
+        }
 
         .step-line {
           top: 15px;
@@ -1155,7 +1200,9 @@ $letter-spacing-logo: 3px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       transition: transform 0.2s ease;
 
-      &:hover { transform: translateY(-2px); }
+      &:hover {
+        transform: translateY(-2px);
+      }
     }
 
     &__trigger {
@@ -1172,7 +1219,9 @@ $letter-spacing-logo: 3px;
       &[aria-expanded='true'] {
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
-        .faq-questions__icon { transform: rotate(180deg); }
+        .faq-questions__icon {
+          transform: rotate(180deg);
+        }
       }
     }
 
@@ -1218,7 +1267,6 @@ $letter-spacing-logo: 3px;
   }
 }
 
-
 // ============================================================
 //  PAGE : ANIMALIER
 //  <body class="page-animalier">
@@ -1226,15 +1274,18 @@ $letter-spacing-logo: 3px;
 // ============================================================
 
 .page-animalier {
-
-  * { letter-spacing: 2px; }
+  * {
+    letter-spacing: 2px;
+  }
 
   .hero-prestations {
     &::before {
       content: '';
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background-image: url('/assets/img/animalier/canin-9.webp');
       background-repeat: no-repeat;
       background-size: 120%;
@@ -1258,10 +1309,11 @@ $letter-spacing-logo: 3px;
   .prestations-intro {
     padding: 30px 0;
 
-    @media (max-width: 768px) { padding: 60px 0; }
+    @media (max-width: 768px) {
+      padding: 60px 0;
+    }
   }
 }
-
 
 // ============================================================
 //  PAGE : PRESTATIONS (hub)
@@ -1269,8 +1321,9 @@ $letter-spacing-logo: 3px;
 // ============================================================
 
 .page-prestations {
-
-  * { letter-spacing: 2px; }
+  * {
+    letter-spacing: 2px;
+  }
 
   .hero-prestations {
     background-image: url('/assets/img/portrait/portrait-12.webp');
@@ -1288,19 +1341,16 @@ $letter-spacing-logo: 3px;
   }
 }
 
-
 // ============================================================
 //  PAGE : MARIAGE
 //  <body class="page-mariage">
 // ============================================================
 
 .page-mariage {
-
   .mariage-banner-img {
     object-position: 50% 57%;
   }
 }
-
 
 // ============================================================
 //  PAGE : PORTRAITS
@@ -1309,12 +1359,10 @@ $letter-spacing-logo: 3px;
 // ============================================================
 
 .page-portraits {
-
   .mariage-banner-img {
     object-position: 50% 55%;
   }
 }
-
 
 // ============================================================
 //  PAGE : GALERIE (boutons + bento)
@@ -1323,12 +1371,10 @@ $letter-spacing-logo: 3px;
 // ============================================================
 
 .page-galerie {
-
   * {
     font-family: 'playfair-display', Georgia, serif;
   }
 }
-
 
 // ============================================================
 //  PAGE : SECTION PRESTATIONS (cards hub accueil)
@@ -1337,7 +1383,6 @@ $letter-spacing-logo: 3px;
 // ============================================================
 
 .page-section-prestations {
-
   .section-presta__title {
     font-family: 'playfair-display', Georgia, serif;
 
@@ -1389,14 +1434,12 @@ $letter-spacing-logo: 3px;
   }
 }
 
-
 // ============================================================
 //  PAGE : BLOG
 //  <body class="page-blog">
 // ============================================================
 
 .page-blog {
-
   // HERO
   .hero {
     position: relative;
@@ -1424,7 +1467,12 @@ $letter-spacing-logo: 3px;
       position: absolute;
       inset: 0;
       z-index: 1;
-      background: linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.48) 48%, rgba(0,0,0,0.18) 100%);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.78) 0%,
+        rgba(0, 0, 0, 0.48) 48%,
+        rgba(0, 0, 0, 0.18) 100%
+      );
       pointer-events: none;
     }
 
@@ -1525,10 +1573,16 @@ $letter-spacing-logo: 3px;
     white-space: nowrap;
     transition: color 0.2s ease;
 
-    &:hover, &:focus, &.active { color: #ef927b; }
+    &:hover,
+    &:focus,
+    &.active {
+      color: #ef927b;
+    }
   }
 
-  .blog-filters-mobile { width: 100%; }
+  .blog-filters-mobile {
+    width: 100%;
+  }
 
   .filters-toggle {
     display: flex;
@@ -1545,8 +1599,14 @@ $letter-spacing-logo: 3px;
     line-height: 1.2;
     cursor: pointer;
 
-    &:hover, &:focus { color: #ef927b; }
-    &:focus-visible { outline: 2px solid #ef927b; outline-offset: 4px; }
+    &:hover,
+    &:focus {
+      color: #ef927b;
+    }
+    &:focus-visible {
+      outline: 2px solid #ef927b;
+      outline-offset: 4px;
+    }
   }
 
   .mobile-filters-list {
@@ -1559,7 +1619,10 @@ $letter-spacing-logo: 3px;
     border-top: 1px solid #dddddd;
     list-style: none;
 
-    li { margin: 0; padding: 0; }
+    li {
+      margin: 0;
+      padding: 0;
+    }
 
     a {
       display: block;
@@ -1572,12 +1635,17 @@ $letter-spacing-logo: 3px;
       text-transform: uppercase;
       transition: color 0.2s ease;
 
-      &:hover, &:focus { color: #ef927b; }
+      &:hover,
+      &:focus {
+        color: #ef927b;
+      }
     }
   }
 
   // CONTENU
-  .blog-content { padding: 0 50px 60px 50px; }
+  .blog-content {
+    padding: 0 50px 60px 50px;
+  }
 
   .articles-list {
     display: flex;
@@ -1681,7 +1749,8 @@ $letter-spacing-logo: 3px;
     text-transform: uppercase;
     transition: background-color 0.2s ease;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: #d4806a;
       color: $color-light;
     }
@@ -1703,15 +1772,22 @@ $letter-spacing-logo: 3px;
       padding: 10px 14px;
       background-color: $color-light;
 
-      &::placeholder { color: #999999; }
-      &:focus { border-color: $color-primary; box-shadow: 0 0 0 0.15rem rgba(234, 153, 129, 0.25); }
+      &::placeholder {
+        color: #999999;
+      }
+      &:focus {
+        border-color: $color-primary;
+        box-shadow: 0 0 0 0.15rem rgba(234, 153, 129, 0.25);
+      }
     }
   }
 
   .search-wrapper {
     position: relative;
 
-    .form-control { padding-right: 40px; }
+    .form-control {
+      padding-right: 40px;
+    }
 
     .search-icon {
       position: absolute;
@@ -1759,10 +1835,15 @@ $letter-spacing-logo: 3px;
       text-decoration: none;
       transition: color 0.2s ease;
 
-      &:hover { color: $color-primary; }
+      &:hover {
+        color: $color-primary;
+      }
     }
 
-    .count { color: rgba(0,0,0,0.5); font-size: 13px; }
+    .count {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 13px;
+    }
   }
 
   .sidebar-popular {
@@ -1778,7 +1859,9 @@ $letter-spacing-logo: 3px;
     text-decoration: none;
     color: $color-dark;
 
-    &:hover .popular-article__title { color: $color-primary; }
+    &:hover .popular-article__title {
+      color: $color-primary;
+    }
 
     &__image {
       width: 72px;
@@ -1807,57 +1890,148 @@ $letter-spacing-logo: 3px;
       font-family: 'Inter', Arial, sans-serif;
       font-size: 10px;
       font-weight: 600;
-      color: rgba(0,0,0,0.6);
+      color: rgba(0, 0, 0, 0.6);
     }
   }
 
   // RESPONSIVE BLOG
   @media (max-width: 991.98px) {
-    .hero__image { transform: translateX(20%) scale(1.5); }
-    .hero__text { width: 620px; }
-    .hero__title { font-size: 56px; }
-    .hero__title-script { font-size: 56px; }
-    .hero__description { width: 520px; font-size: 21px; }
-    .blog-categories-list { gap: 28px; }
-    .blog-category-link { font-size: 19px; }
-    .blog-content { padding: 0 24px 40px 24px; }
+    .hero__image {
+      transform: translateX(20%) scale(1.5);
+    }
+    .hero__text {
+      width: 620px;
+    }
+    .hero__title {
+      font-size: 56px;
+    }
+    .hero__title-script {
+      font-size: 56px;
+    }
+    .hero__description {
+      width: 520px;
+      font-size: 21px;
+    }
+    .blog-categories-list {
+      gap: 28px;
+    }
+    .blog-category-link {
+      font-size: 19px;
+    }
+    .blog-content {
+      padding: 0 24px 40px 24px;
+    }
   }
 
   @media (max-width: 767.98px) {
-    .hero { min-height: 360px; }
-    .hero__image { object-position: 65% center; transform: none; }
-    .hero__overlay {
-      background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.52) 60%, rgba(0,0,0,0.25) 100%);
+    .hero {
+      min-height: 360px;
     }
-    .hero__navbar { height: 40px; }
-    .hero__text { top: 40px; right: 0; left: 0; width: 100%; min-height: auto; padding: 24px 20px; }
-    .hero__title { gap: 10px; margin-bottom: 65px; font-size: 46px; letter-spacing: 0.04em; }
-    .hero__title-script { font-size: 48px; letter-spacing: 0.04em; }
-    .hero__description { width: 100%; font-size: 18px; line-height: 1.35; }
-    .hero__description span { display: inline; }
-    .blog-categories-navigation { padding: 24px 16px; }
-    .blog-categories-list { display: none !important; }
-    .blog-filters-mobile { display: block !important; }
-    .blog-content { padding: 0 16px 40px 16px; }
-    .article-card { height: auto; flex-direction: column; }
-    .article-card .article-card-col-img { width: 100%; height: 220px; }
-    .article-card .article-card-col-text { height: auto; padding: 20px 16px; }
+    .hero__image {
+      object-position: 65% center;
+      transform: none;
+    }
+    .hero__overlay {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.52) 60%,
+        rgba(0, 0, 0, 0.25) 100%
+      );
+    }
+    .hero__navbar {
+      height: 40px;
+    }
+    .hero__text {
+      top: 40px;
+      right: 0;
+      left: 0;
+      width: 100%;
+      min-height: auto;
+      padding: 24px 20px;
+    }
+    .hero__title {
+      gap: 10px;
+      margin-bottom: 65px;
+      font-size: 46px;
+      letter-spacing: 0.04em;
+    }
+    .hero__title-script {
+      font-size: 48px;
+      letter-spacing: 0.04em;
+    }
+    .hero__description {
+      width: 100%;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+    .hero__description span {
+      display: inline;
+    }
+    .blog-categories-navigation {
+      padding: 24px 16px;
+    }
+    .blog-categories-list {
+      display: none !important;
+    }
+    .blog-filters-mobile {
+      display: block !important;
+    }
+    .blog-content {
+      padding: 0 16px 40px 16px;
+    }
+    .article-card {
+      height: auto;
+      flex-direction: column;
+    }
+    .article-card .article-card-col-img {
+      width: 100%;
+      height: 220px;
+    }
+    .article-card .article-card-col-text {
+      height: auto;
+      padding: 20px 16px;
+    }
   }
 
   @media (min-width: 768px) {
-    .blog-categories-list { display: flex !important; }
-    .blog-filters-mobile { display: none !important; }
-    .article-card-image { height: 100%; min-height: 190px; }
+    .blog-categories-list {
+      display: flex !important;
+    }
+    .blog-filters-mobile {
+      display: none !important;
+    }
+    .article-card-image {
+      height: 100%;
+      min-height: 190px;
+    }
   }
 
   @media (max-width: 399.98px) {
-    .hero { min-height: 340px; }
-    .hero__text { padding: 20px 16px; }
-    .hero__title { margin-bottom: 55px; font-size: 39px; }
-    .hero__title-script { font-size: 42px; }
-    .hero__description { font-size: 16px; }
-    .blog-categories-navigation { padding: 20px 16px; }
-    .filters-toggle { font-size: 13px; }
-    .mobile-filters-list a { font-size: 14px; }
+    .hero {
+      min-height: 340px;
+    }
+    .hero__text {
+      padding: 20px 16px;
+    }
+    .hero__title {
+      margin-bottom: 55px;
+      font-size: 39px;
+    }
+    .hero__title-script {
+      font-size: 42px;
+    }
+    .hero__description {
+      font-size: 16px;
+    }
+    .blog-categories-navigation {
+      padding: 20px 16px;
+    }
+    .filters-toggle {
+      font-size: 13px;
+    }
+    .mobile-filters-list a {
+      font-size: 14px;
+    }
   }
 }
