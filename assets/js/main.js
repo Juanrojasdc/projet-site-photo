@@ -5,17 +5,41 @@
 $(document).ready(function () {
   // Fonction principale pour charger les éléments structurels
   function initLayout() {
+    // --- Chargement de la barre de navigation (con ruta absoluta '/') ---
     // --- Chargement de la barre de navigation ---
-    $('#main-navbar').load('pages/navbar.html', function (response, status, xhr) {
+    $('#main-navbar').load('/pages/navbar.html', function (response, status, xhr) {
       if (status === 'error') {
         console.error('Erreur navbar : ' + xhr.status + ' ' + xhr.statusText);
       } else {
         console.log('Navbar chargée avec succès.');
+
+        // CAPTURAMOS EL HEADER Y REVISAMOS SU ATRIBUTO
+        var headerContainer = $('#main-navbar');
+
+        if (headerContainer.attr('data-theme') === 'light') {
+          // Si el header pide 'light', buscamos la navbar inyectada y cambiamos las clases
+          headerContainer
+            .find('#myNavbar')
+            .removeClass('nav-theme-dark')
+            .addClass('nav-theme-light');
+        }
+
+        // ======================================================
+        // LOGIQUE DE LA NAVBAR (EFFET AU SCROLL)
+        // ======================================================
+        var navbar = $('.navbar-glass');
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 50) {
+            navbar.addClass('scrolled');
+          } else {
+            navbar.removeClass('scrolled');
+          }
+        });
       }
     });
 
-    // --- Chargement du pied de page ---
-    $('#main-footer').load('pages/footer.html', function (response, status, xhr) {
+    // --- Chargement du pied de page (con ruta absoluta '/') ---
+    $('#main-footer').load('/pages/footer.html', function (response, status, xhr) {
       if (status === 'error') {
         console.error('Erreur footer : ' + xhr.status + ' ' + xhr.statusText);
       } else {
@@ -23,8 +47,8 @@ $(document).ready(function () {
       }
     });
 
-    // --- Chargement de la section galerie ---
-    $('#section-galerie').load('pages/section-galerie.html', function (response, status, xhr) {
+    // --- Chargement de la section galerie (con ruta absoluta '/') ---
+    $('#section-galerie').load('/pages/section-galerie.html', function (response, status, xhr) {
       if (status === 'error') {
         console.error('Erreur section galerie : ' + xhr.status + ' ' + xhr.statusText);
       } else {
@@ -32,9 +56,9 @@ $(document).ready(function () {
       }
     });
 
-    // --- Chargement du bloc illustration/contact ---
+    // --- Chargement du bloc illustration/contact (con ruta absoluta '/') ---
     $('#buttons-prestations').load(
-      'pages/illustration-contact.html',
+      '/pages/illustration-contact.html',
       function (response, status, xhr) {
         if (status === 'error') {
           console.error('Erreur illustration-contact : ' + xhr.status + ' ' + xhr.statusText);
@@ -47,35 +71,6 @@ $(document).ready(function () {
 
   // Appel de la fonction de chargement
   initLayout();
-
-  // ======================================================
-  // 2. LOGIQUE DE LA NAVBAR (EFFET AU SCROLL)
-  // ======================================================
-
-  // On recharge la navbar pour s'assurer qu'elle existe avant d'appliquer le scroll
-  $('#main-navbar').load('pages/navbar.html', function (response, status, xhr) {
-    if (status === 'success') {
-      console.log('Navbar cargada.');
-
-      // Activation du listener de scroll
-      $(window).scroll(function () {
-        var navbar = $('.navbar-glass');
-
-        // Ajout/retrait de la classe selon la position du scroll
-        if ($(window).scrollTop() > 50) {
-          navbar.addClass('scrolled');
-        } else {
-          navbar.removeClass('scrolled');
-        }
-      });
-    } else {
-      console.error('Error cargando navbar: ' + xhr.statusText);
-    }
-  });
-
-  // // Chargement des autres composants (séparément)
-  // $('#main-footer').load('pages/footer.html');
-  // $('#buttons-prestations').load('pages/illustration-contact.html');
 });
 
 // ======================================================
