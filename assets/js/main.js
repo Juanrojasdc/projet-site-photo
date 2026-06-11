@@ -68,3 +68,18 @@ $(document).ready(function () {
   // $('#main-footer').load('pages/footer.html');
   // $('#buttons-prestations').load('pages/illustration-contact.html');
 });
+
+// ======================================================
+// Ajout d'effet Gsap sur les photos
+// ======================================================
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from('.menu__card', {
+  duration: 1,
+  opacity: 0,
+  y: 60,
+  ease: 'power2.out',
+  stagger: 0.1,
+  scrollTrigger: { trigger: '.menu__grid', start: 'top 80%' },
+});
