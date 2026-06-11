@@ -1,21 +1,25 @@
-const listeMots = ['Cachalot', 'Pétunia', 'Serviette'];
-let score = 0;
+$(document).ready(function () {
+  // Chargement des composants structurels de la page
+  function initLayout() {
+    // Injection de la barre de navigation (depuis le dossier pages)
+    $('#main-navbar').load('pages/navbar.html', function (response, status, xhr) {
+      if (status === 'error') {
+        console.error('Erreur navbar : ' + xhr.status + ' ' + xhr.statusText);
+      } else {
+        console.log('Navbar chargée avec succès.');
+      }
+    });
 
-let motUtilisateur = prompt('Entrez le mot : ' + listeMots[0]);
+    // Injection du pied de page (depuis le dossier pages)
+    $('#main-footer').load('pages/footer.html', function (response, status, xhr) {
+      if (status === 'error') {
+        console.error('Erreur footer : ' + xhr.status + ' ' + xhr.statusText);
+      } else {
+        console.log('Footer chargé avec succès.');
+      }
+    });
+  }
 
-if (motUtilisateur === listeMots[0]) {
-  score++;
-}
-
-motUtilisateur = prompt('Entrez le mot : ' + listeMots[1]);
-
-if (motUtilisateur === listeMots[1]) {
-  score++;
-}
-
-motUtilisateur = prompt('Entrez le mot : ' + listeMots[2]);
-
-if (motUtilisateur === listeMots[2]) {
-  score++;
-}
-console.log(score);
+  // Initialisation du site
+  initLayout();
+});
