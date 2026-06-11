@@ -609,10 +609,20 @@ $letter-spacing-logo: 3px;
   top: 0;
   width: 100%;
   z-index: 1030;
-  background-color: $color-glass-bg !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 30px $color-glass-shadow;
+  transition:
+    background-color 0.4s ease,
+    backdrop-filter 0.4s ease; // Transición suave
+
+  // Fondo inicial transparente
+  background-color: transparent;
+
+  // Cuando le añadimos la clase .scrolled, aplicamos el estilo
+  &.scrolled {
+    background-color: $color-glass-bg !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px $color-glass-shadow;
+  }
 }
 
 .logo-box {
@@ -2058,6 +2068,111 @@ $letter-spacing-logo: 3px;
     }
     .mobile-filters-list a {
       font-size: 14px;
+    }
+  }
+}
+/* ==========================================
+   BANNER ACCUEIL (hero-accueil)
+   ========================================== */
+
+$color-salmon: #e0998a;
+$color-cream: #f9f6f0;
+$color-text-dark: #222222;
+
+.hero-accueil {
+  // CORRECTION: Le chemin part du fichier CSS compilé (/assets/css/main.min.css)
+  // On recule d'un dossier (../) pour arriver dans /assets/, puis on va dans /img/
+  background-image: url('../img/mariage/mariage-35.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  // Hauteur de la section
+  min-height: 100vh;
+  position: relative;
+
+  // Positionnement vertical manuel (pousse le contenu vers le bas, mais plus haut que le centre absolu)
+  padding-top: 28vh;
+
+  // Styles du titre
+  .hero-accueil-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: $color-text-dark;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2px;
+
+    .font-script {
+      font-family: 'Miama', cursive;
+      color: $color-primary;
+      font-size: 64px;
+      margin-left: 8px;
+      line-height: 1;
+    }
+  }
+
+  // Styles du sous-titre
+  .hero-accueil-subtitle {
+    font-family: 'montserrat-regular', sans-serif;
+    font-size: 1.1rem;
+    color: $color-text-dark;
+    line-height: 1.6;
+    font-weight: 500;
+    max-width: 90%;
+  }
+
+  // Styles des boutons
+  .hero-accueil-buttons {
+    .btn {
+      border-radius: 0;
+      padding: 12px 28px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      transition: all 0.3s ease;
+      border: none;
+    }
+
+    .btn-accueil-primary {
+      background-color: $color-primary;
+      color: $color-text-dark;
+
+      &:hover {
+        background-color: darken($color-salmon, 10%);
+        color: $color-text-dark;
+      }
+    }
+
+    .btn-accueil-secondary {
+      background-color: $color-cream;
+      color: $color-text-dark;
+
+      &:hover {
+        background-color: darken($color-cream, 10%);
+        color: $color-text-dark;
+      }
+    }
+  }
+}
+
+// Media Queries pour Desktop
+@media (min-width: 992px) {
+  .hero-accueil {
+    // Ajustement de la hauteur sur grand écran si nécessaire
+    padding-top: 32vh;
+
+    .hero-accueil-title {
+      font-size: 2.8rem;
+
+      .font-script {
+        font-size: 4.5rem;
+      }
+    }
+
+    .hero-accueil-subtitle {
+      font-size: 1.25rem;
     }
   }
 }
