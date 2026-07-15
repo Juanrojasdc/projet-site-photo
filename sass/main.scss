@@ -28,69 +28,69 @@ $letter-spacing-logo: 3px;
 
 @font-face {
   font-family: 'inter-medium';
-  src: url(/assets/fonts/Inter/Inter_18pt-Medium.ttf);
+  src: url(../assets/fonts/Inter/Inter_18pt-Medium.ttf);
 }
 @font-face {
   font-family: 'inter-regular';
-  src: url(/assets/fonts/Inter/Inter_28pt-Regular.ttf);
+  src: url(../assets/fonts/Inter/Inter_28pt-Regular.ttf);
 }
 @font-face {
   font-family: 'inter-extra-light';
-  src: url(/assets/fonts/Inter/Inter_18pt-ExtraLight.ttf);
+  src: url(../assets/fonts/Inter/Inter_18pt-ExtraLight.ttf);
 }
 @font-face {
   font-family: 'playfair-regular';
-  src: url(/assets/fonts/Playfair/PlayfairDisplay-Regular.ttf);
+  src: url(../assets/fonts/Playfair/PlayfairDisplay-Regular.ttf);
 }
 @font-face {
   font-family: 'playfair-light';
-  src: url(/assets/fonts/Playfair/PlayfairDisplay-light.ttf);
+  src: url(../assets/fonts/Playfair/PlayfairDisplay-light.ttf);
 }
 @font-face {
   font-family: 'playfair-display';
-  src: url(/assets/fonts/Playfair-Display/PlayfairDisplay-Regular.woff);
+  src: url(../assets/fonts/Playfair-Display/PlayfairDisplay-Regular.woff);
 }
 @font-face {
   font-family: 'playfair-display-bold';
-  src: url(/assets/fonts/Playfair-Display/PlayfairDisplay-Bold.woff);
+  src: url(../assets/fonts/Playfair-Display/PlayfairDisplay-Bold.woff);
 }
 @font-face {
   font-family: 'playfair-display-italic';
-  src: url(/assets/fonts/Playfair-Display/PlayfairDisplay-Italic.woff);
+  src: url(../assets/fonts/Playfair-Display/PlayfairDisplay-Italic.woff);
 }
 @font-face {
   font-family: 'montserrat-medium';
-  src: url(/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+  src: url(../assets/fonts/Montserrat/Montserrat-Medium.ttf);
 }
 @font-face {
   font-family: 'montserrat-regular';
-  src: url(/assets/fonts/Montserrat/Montserrat-Regular.ttf);
+  src: url(../assets/fonts/Montserrat/Montserrat-Regular.ttf);
 }
 @font-face {
   font-family: 'montserrat-light';
-  src: url(/assets/fonts/Montserrat/Montserrat-Light.woff);
+  src: url(../assets/fonts/Montserrat/Montserrat-Light.woff);
 }
 @font-face {
   font-family: 'montserrat';
-  src: url(/assets/fonts/Montserrat/Montserrat-Regular.woff);
+  src: url(../assets/fonts/Montserrat/Montserrat-Regular.woff);
 }
 @font-face {
   font-family: 'Miama';
-  src: url(/assets/fonts/Miama/Miama.otf) format('opentype');
+  src: url(../assets/fonts/Miama/Miama.otf) format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Playfair Display';
-  src: url(/assets/fonts/PlayfairDisplay-Medium.ttf) format('truetype');
+  src: url(../assets/fonts/PlayfairDisplay-Medium.ttf) format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url(/assets/fonts/Montserrat-Medium.ttf) format('truetype');
+  src: url(../assets/fonts/Montserrat-Medium.ttf) format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -558,7 +558,7 @@ $letter-spacing-logo: 3px;
   .illustration-contact {
     min-height: 407px;
     background-color: $color-dark;
-    background-image: url('/assets/img/contact__image.png');
+    background-image: url('../assets/img/contact__image.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -865,7 +865,7 @@ $letter-spacing-logo: 3px;
 .page-about {
   // HERO
   .hero-about {
-    background-image: url('/assets/img/aurelien-5.webp');
+    background-image: url('../assets/img/aurelien-5.webp');
     background-size: cover;
     background-position: right 99% center;
     background-repeat: no-repeat;
@@ -1104,7 +1104,7 @@ $letter-spacing-logo: 3px;
 .page-faq {
   // HERO
   .hero-faq {
-    background-image: url('/assets/img/mariage/mariage-7.webp');
+    background-image: url('../assets/img/mariage/mariage-7.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1331,7 +1331,7 @@ $letter-spacing-logo: 3px;
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('/assets/img/animalier/canin-9.webp');
+      background-image: url('../assets/img/animalier/canin-9.webp');
       background-repeat: no-repeat;
       background-size: 120%;
       background-position: 35% 60%;
@@ -1343,7 +1343,7 @@ $letter-spacing-logo: 3px;
       min-height: 45vh;
 
       &::before {
-        background-image: url('/assets/img/animalier/canin-8.webp');
+        background-image: url('../assets/img/animalier/canin-8.webp');
         background-size: cover;
         background-position: 50% 40%;
         transform: none;
@@ -1371,7 +1371,7 @@ $letter-spacing-logo: 3px;
   }
 
   .hero-prestations {
-    background-image: url('/assets/img/portrait/portrait-12.webp');
+    background-image: url('../assets/img/portrait/portrait-12.webp');
     background-position: 100% 35%;
 
     @media (max-width: 768px) {
