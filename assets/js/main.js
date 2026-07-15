@@ -47,6 +47,18 @@ $(document).ready(function () {
       }
     });
 
+    // --- Chargement de la section prestations (con ruta absoluta '/') ---
+    $('#section-prestations').load(
+      '/pages/section-prestations.html',
+      function (response, status, xhr) {
+        if (status === 'error') {
+          console.error('Erreur section prestation : ' + xhr.status + ' ' + xhr.statusText);
+        } else {
+          console.log('Section prestation chargé avec succès.');
+        }
+      }
+    );
+
     // --- Chargement de la section galerie (con ruta absoluta '/') ---
     $('#section-galerie').load('/pages/section-galerie.html', function (response, status, xhr) {
       if (status === 'error') {
