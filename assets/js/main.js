@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     // --- Chargement de la section prestations (con ruta absoluta '/') ---
     $('#section-prestations').load(
-      '/pages/section-prestations.html',
+      '../pages/section-prestations.html',
       function (response, status, xhr) {
         if (status === 'error') {
           console.error('Erreur section prestation : ' + xhr.status + ' ' + xhr.statusText);
