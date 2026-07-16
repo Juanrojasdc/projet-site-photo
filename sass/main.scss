@@ -558,7 +558,7 @@ $letter-spacing-logo: 3px;
   .illustration-contact {
     min-height: 407px;
     background-color: $color-dark;
-    background-image: url('../assets/img/contact__image.png');
+    background-image: url('projet-site-photo/assets/img/portrait/portrait-footer.webp');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -865,7 +865,7 @@ $letter-spacing-logo: 3px;
 .page-about {
   // HERO
   .hero-about {
-    background-image: url('../assets/img/aurelien-5.webp');
+    background-image: url('projet-site-photo/assets/img/portrait/aurelien-5.webp');
     background-size: cover;
     background-position: right 99% center;
     background-repeat: no-repeat;
@@ -1104,7 +1104,7 @@ $letter-spacing-logo: 3px;
 .page-faq {
   // HERO
   .hero-faq {
-    background-image: url('../assets/img/mariage/mariage-7.webp');
+    background-image: url('projet-site-photo/assets/img/portrait/mariage-7.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1331,7 +1331,7 @@ $letter-spacing-logo: 3px;
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('../assets/img/animalier/canin-9.webp');
+      background-image: url('projet-site-photo/assets/img/portrait/canin-9.webp');
       background-repeat: no-repeat;
       background-size: 120%;
       background-position: 35% 60%;
@@ -1343,7 +1343,7 @@ $letter-spacing-logo: 3px;
       min-height: 45vh;
 
       &::before {
-        background-image: url('../assets/img/animalier/canin-8.webp');
+        background-image: url('projet-site-photo/assets/img/portrait/canin-8.webp');
         background-size: cover;
         background-position: 50% 40%;
         transform: none;
@@ -1371,7 +1371,7 @@ $letter-spacing-logo: 3px;
   }
 
   .hero-prestations {
-    background-image: url('../assets/img/portrait/portrait-12.webp');
+    background-image: url('projet-site-photo/assets/img/portrait/portrait-12.webp');
     background-position: 100% 35%;
 
     @media (max-width: 768px) {
@@ -2091,7 +2091,7 @@ $color-text-dark: #222222;
 .hero-accueil {
   // CORRECTION: Le chemin part du fichier CSS compilé (/assets/css/main.min.css)
   // On recule d'un dossier (../) pour arriver dans /assets/, puis on va dans /img/
-  background-image: url('../img/mariage/mariage-35.webp');
+  background-image: url('projet-site-photo/assets/img/mariage/mariage-35.webp');
   background-size: cover;
   background-position: center 25%;
   background-repeat: no-repeat;
