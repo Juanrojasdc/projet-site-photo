@@ -7,7 +7,7 @@ $(document).ready(function () {
   function initLayout() {
     // --- Chargement de la barre de navigation (con ruta absoluta '/') ---
     // --- Chargement de la barre de navigation ---
-    $('#main-navbar').load('/pages/navbar.html', function (response, status, xhr) {
+    $('#main-navbar').load('../pages/navbar.html', function (response, status, xhr) {
       if (status === 'error') {
         console.error('Erreur navbar : ' + xhr.status + ' ' + xhr.statusText);
       } else {
@@ -39,7 +39,7 @@ $(document).ready(function () {
     });
 
     // --- Chargement du pied de page (con ruta absoluta '/') ---
-    $('#main-footer').load('/pages/footer.html', function (response, status, xhr) {
+    $('#main-footer').load('../pages/footer.html', function (response, status, xhr) {
       if (status === 'error') {
         console.error('Erreur footer : ' + xhr.status + ' ' + xhr.statusText);
       } else {
@@ -60,7 +60,7 @@ $(document).ready(function () {
     );
 
     // --- Chargement de la section galerie (con ruta absoluta '/') ---
-    $('#section-galerie').load('/pages/section-galerie.html', function (response, status, xhr) {
+    $('#section-galerie').load('../pages/section-galerie.html', function (response, status, xhr) {
       if (status === 'error') {
         console.error('Erreur section galerie : ' + xhr.status + ' ' + xhr.statusText);
       } else {
@@ -70,7 +70,7 @@ $(document).ready(function () {
 
     // --- Chargement du bloc illustration/contact (con ruta absoluta '/') ---
     $('#buttons-prestations').load(
-      '/pages/illustration-contact.html',
+      '../pages/illustration-contact.html',
       function (response, status, xhr) {
         if (status === 'error') {
           console.error('Erreur illustration-contact : ' + xhr.status + ' ' + xhr.statusText);
